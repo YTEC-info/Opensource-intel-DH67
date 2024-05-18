@@ -1,0 +1,124 @@
+[!p[?3;4l[4l>[0m(B[?1h=[H[2J[0m(B[7m[30;1H[K[?12l[?25h[?25l                                                                                                               [?12l[?25h[?12l[?25h[?25lCTRL-A Z for help | 115200 8N1 | NOR | Minicom 2.8 | VT102 | Desconectado | ttyUSB0                            [?12l[?25h[1;1H
+[0m(BBem-vindo ao minicom 2.8
+
+OPÇÕES: I18n 
+Porta: /dev/ttyUSB0, 03:19:58
+
+Pressione CTRL-A Z para ajuda sobre teclas especiais
+
+reboot-24.02-410-g86b145ad3efe-dirty Thu Apr 04 03:26:19 UTC 2024 x86_32 bootblock starting (log level: 7)...
+[DEBUG] at 0x310000.
+[DEBUG]  F400000 #areas = 4
+[DEBUG]  FMAP: area COREBOOT found @ 310200 (982528 bytes)
+[ built for 16 files, used 0x354 of 0x4000 bytes
+[INFO ]  CBFS: Found 'fallback/romstage' @0x80 size 0x17670 in mcache 0xfeff0e2c
+[DEBUG]  BS:): total (unknown) / 46 ms
+
+
+[0m(B[1m[NOTE ]  coreboot-24.02-410-g86b145ad3efe-dirx86_32 romstage starting (log level: 7)...
+[0m(B[DEBUG]  SMBERROR]  early_usb_init: USB04: USBIR_TXRX_GAIN_MOBILE_LOW is an invalid setting for desktop!
+[0m(B[7m[ERROR]  early_usb_init: USB05: USBIR_TXRX_GAIN_MOBILE_LOW is an invalid setting for desktop!
+[ERROR]  early_usb_init: USB06: USBIR_TXRX_GAIN_MOBILE_LOW is an invalid setting for desktop!
+[ERROR]  early_usb_init: USB07: USBIR_TXRX_GAIN_MOBILE_LOW is an invalid setting for desktop!
+[ERROlid setting for desktop!
+[0m(B type: desktop
+[DEBUG]X4 @ 5000MT/s
+[DEBUG]  0m[DEBUG]  Selected DRAM frequen 10 us
+[DEBUG]  MPLL fr[28;17H[DEBUG]  Done dimm mapping
+[DEBUG]  Update PCI-E cBUG]  PCI(0, 0, 0)[a0] = 80000000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[a4] = 0[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[bc] = 7ea00000[1;29r[29;1H
+[1;30r[29;1H00[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[ac] = 1[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[b8] = 7c000000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[b0] = 7ca00000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[b4] = 7c800000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[7c] = 7f[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[70] = 7f000000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[74] = 0[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI(0, 0, 0)[78] = ff000c00[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  Done memory mapvoke MEBx     : 0x0[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[NOME:  MFS failure     : 0x0[0m(B[1;29r[29;1H
+[1;30r[29;1H  : 0x0[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[NOTE ]  ME:  Cte req   : 0x0[0m(B[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[NOTE ]  ME:  (Reserved)      : 0x0[0m(B[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[NOTE ]  ME:  Current state[NOTE ]  ME:  Progress code   : 0x1[0m(B[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[NOTE ]  PASSED! Tell ME that DRAM is readyNOTE ]  ME:  Warm reset req  : 00x2c[0m(B[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[NOTE ]  ME:  Curr0m[1;29r[29;1H
+[1;30r[29;1H[NOTE ]  ME: Requested Bth x8 single rank[0m(B[1;29r[29;1H
+[1;30r[29;1H[DEBUenhanced interleave mode on[1;29r[29;1H
+[1;30r[29;1H[DEBUG]     rank interleave on[1;29r[29;1H
+[1;30r[29;1H[DEBUG]     DIMMA 2048 MB width x8 single rank root @ 0x7bffec00 62 entries.[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  IMD: root @ 0DEBUG]  CBMEM entry for DIMM infe at 0x7bfce000 with entry 0x7bf postcar times (exec / con[29;112Hs[29;112Ho[29;112Hl[29;112He[29;112H)[29;112H:[29;112H [29;112H [29;112HP[29;112HC[29;112HI[29;112H:[29;112H [29;112H0[29;112H0[29;112H:[29;112H0[29;112H0[29;112H:[29;112H0[29;112H2[29;112H.[29;112H0[29;112H [29;112H[[29;112H8[29;112H0[29;112H8[29;112H6[29;112H/[29;112H0[29;112H1[29;112H5[29;112H2[29;112H][29;112H [29;112He[29;112Hn[29;112Ha[29;112Hb[29;112Hl[29;112He[29;112Hd[29;112H[1;29r[29;1H
+[1;30r[29;1H[INFO ]  PCI: Stam[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:16.1 [8086/1c3b] disabled No operatiodevice[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:1c.3: Disabling device[1;29r[29;1H
+[1;30r[29;1HG]  PCI: 00:00:1f.6 [8086/1c24] disabled No operations[1;29r[29;1H
+[1;30r[29;1Hevices:[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[4m[WARN ]  PCI: 00:00:01.1[0m(B[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[4m[WARN ]  UMA and 2M GTT[0m(B[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  TSEG base 0x7c000000 size 8MG]  PCI: 00:00:16.2 register 14fffffff), read-only ignoring it[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:16.2 register 20(ffffffff), read-only ignoring it[1;29r[29;1H
+[1;30r[29;1H[DEBUG]fffff), read-only ignoring it[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:16.2 register 30(ffffffff), read-only ignoring it[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  gnoring it[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCIoring it[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: placement) ===[1;29r[29;1H
+[1;30r[29;1H[DEBUG]   PCI: 00:00:1c.0 io: size: 0 align: 12 gran: 12 limit: ffff[1;29r[29;1H
+[1;30r[29;1H[DEBUG]   PCI: 00:00:1c.0f.3 20 base 00000400 limit 00000c *  [0xf000 - 0xffff] limit: ffff io[1;29r[29;1H
+[1;30r[29;1H[DEBUG]    PCI: 0] limit: efff io[1;29r[29;1H
+[1;30r[29;1H[DEBUGa0 - 0xefbf] limit: efbf io[1;29r[29;1H
+[1;30r[29;1H[DEBUG]    PCI: 00:00:1f.2 20 *  [0xef80 - 0xef9f] limit: ef9f io[1;29r[29;1H
+[1;30r[29;1H[DEBUG]    PCI:t: fdffffff[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  DOMAIN: 00000000 mem: base: 100000000 size: 0 align: 0 gran: 0 limit: fffffffff[1;29r[29;1H
+[1;30r[29;1H[DEBUG] [0m[1;29r[29;1H
+[1;30r[29;1H[INFO ]   * Base: f4000000, Size: a000000, Tag: 200[1;29r[29;1H
+[1;30r[29;1H[INFO ]   * Base: 10060000*  [0xfdad7000 - 0xfdad70ff] limit: fdad70ff mem[1;29r[29;1H
+[1;30r[29;1H[DEBUG]    PCI: 00:00:16.0 10 *  [0xfdad6000 - 0xfdad600f] limit: fda buprefmem[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI00000 gran 0x16 mem64[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:02.0 18 <- [0x00000000e0000000 - 0x00000000efffffff] size 0x10000000 gran 0x0000000000fffe] [29;112Hs[29;112Hi[29;112Hz[29;112He[29;112H [29;112H0[29;112Hx[29;112H0[29;112H0[29;112H0[29;112H0[29;112H0[29;112H0[29;112H0[29;112H0[29;112H [29;112H[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:02:00.0 20 <- [0x00000000ffffffff - 0x00000000fffffffe] size 0x0000000:1f.3 subsystem <- 8086/2[29;112H0[29;112H0[29;112H1[29;112H[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:1f.3 000e0000000 mask 0x0000000ff0000000 type 1[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  MTR0m[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  Fixed MTRRs   :]  CPU: APIC: 00 enabled[1;29r[29;1H
+[1;30r[29;1H[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  CPU: APIC: 02UG]    ss0        [0x7c2fdc00-0x7c2fe000][1;29r[29;1H
+[1;30r[29;1H[DEBUG]    st[1;29r[29;1H
+[1;30r[29;1H[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  CPU 1EBUG]    stub1      [0x7c2f5c00 [0x7c2f5800-0x7c2f59a0][1;29r[29;1H
+[1;30r[29;1H[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  CPU 3[1;29r[29;1H
+[1;30r[29;1H[DEBUG]    ss3        [0x7c2fd000-0x7c2fd400][1;29r[29;1H
+[1;30r[29;1H[DEBUG] alue of 0x7c2f6000[1;29r[29;1H
+[1;30r[29;1H[DEB2[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  New SMBASE=0x7c2ed800 IEDBASE=0x7c400000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  Writing SMRR. base = 0x7c000006, mask=0xff800800S file[1;29r[29;1H
+[1;30r[29;1H[0m(B[1m[4m[WARN ]  CBFS: 'pci8086,0106.rom' not found.            x_res x y_res: 1920   : NO[0m(B[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  ME: Update In Progress      : NO[1;29r[29;1H
+[1;30r[29;1H State   : Initializing[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  ME: Current Operation State : Bring up[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  ME: Current Operation Mode  [0m[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  ME: Power Manaue to exception[1;29r[29;1H
+[1;30r[29;1H[DEBUG]m[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:19.0 init[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:19.0 init finished in 0 msecs[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:1a: verb_size: 16[1;29r[29;1H
+[1;30r[29;1H[DEBUG] 10ec0892[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  azal0:1b.0 init finished in 42 msecs[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  PCI: 00:00:1clizing PCH PCIe bridge.[1;29r[29;1H
+[1;30r[29;1H H67, device id: 0x1c4a, rev id 0x5[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  IOAPIC: Initializing IOAPIC at fec00000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  IOAPIC: ID = 0CI: 00:00:1f.2 init finished in m[DEBUG]  PNP: 002e.b init[1;29r[29;1H
+[1;30r[29;1Hurer: ef[1;29r[29;1H
+[1;30r[29;1H[INFO ]  SF: Dne.[1;29r[29;1H
+[1;30r[29;1H[INFO ]  Devices fiength now 84[1;29r[29;1H
+[1;30r[29;1H[INFO ]  ACPI: done.[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  ACPI tables: 15056 bytes.[1;29r[29;1H
+[1;30r[29;1He40000[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  SMBIOS [1;29r[29;1H
+[1;30r[29;1H[INFO ]  Create SMBIOS type 20[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  SMBIOS tables: 838 bytes.[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  Writing table forward entry 0m[1;29r[29;1H
+[1;30r[29;1H[DEBUG]   4. 000000007be40000-000000007be84fff: CONFIGURATION TABLES[1;29r[29;1H
+[1;30r[29;1H[DEBUG]   5. 000000007be85000-000000007bf000011b8d[1;29r[29;1H
+[1;30r[29;1H[DEBUG]  using LZMA[8;46H[?25l+----------------------+[9;46H|   Sair do Minicom?   |[10;46H|               Não    |[11;46H+----------------------+[10;67H[?25l[10;49H[0m(B[7m   Sim  [?12l[?25h[8;1H[0m(B[DEBUG]  PCI: 00:00:19.0 init                                        [9;1H[DEBUG]  PCI: 00:00:19.0 init finished in 0 msecs                    [10;1H[DEBUG]  PCI: 00:00:1a: verb_size: 16                                [11;1H[DEBUG] 10ec0892                                                     [29;20H[?12l[?25h[?12l[?25h[H[2J[?12l[?25h[?1l>[!p[?3;4l[4l>
