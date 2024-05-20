@@ -1,0 +1,34 @@
+Category: desktop
+Board URL: https://www.intel.com.br/content/www/br/pt/products/sku/50098/intel-desktop-board-dh67bl/specifications.html
+ROM package: SOIC-8
+ROM protocol: SPI
+ROM socketed: n
+Flashrom support: n
+Release year: 2012
+
+ It is quite similar to the other DQ67SW mainboards already supported in coreboot. Tested in variants DH67BL and DH67GD.
+
+Not tested: DH67BA, DH67CL, DH67VR
+
+Working:
+ - All DIMM slots with native raminit (different DIMMs)
+ - S3 suspend/resume
+ - USB ports
+ - All SATA ports
+ - Gigabit Ethernet
+ - On-board audio
+ - EHCI debug with the CH347 (Front USB 2.0 Header "FP USB 1")
+ - SeaBIOS 1.16.3
+ - EDK2 (24.02)
+ - Integrated graphics (libgfxinit):
+ - VGA
+ - HDMI
+ - Display Port
+ - DVI
+ - PCIe x16 slot
+
+Untested:
+- PCI slot
+- eSATA
+- Firewire
+- InfraRed
