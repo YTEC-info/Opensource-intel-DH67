@@ -8,7 +8,7 @@ Release year: 2012
 
  It is quite similar to the other DQ67SW mainboards already supported in coreboot. Tested in variants DH67BL and DH67GD.
 
-Not tested: DH67BA, DH67CL, DH67VR
+Not tested: DH67BA, DH67CL, DH67CF, DH67VR
 
 Working:
  - All DIMM slots with native raminit (different DIMMs)
