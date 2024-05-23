@@ -6,7 +6,7 @@
 
 static void mainboard_final(void *unused)
 {
-       beep(1500, 100);
+       beep(2500, 150);
 }
 
 static void mainboard_enable(struct device *dev)
