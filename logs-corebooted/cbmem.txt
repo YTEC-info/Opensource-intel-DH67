@@ -1,0 +1,2049 @@
+27 entries total:
+
+   0:1st timestamp                                     2,347 (0)
+  11:start of bootblock                                58,933 (56,585)
+  12:end of bootblock                                  1,337,312 (1,278,379)
+  13:starting to load romstage                         1,337,313 (0)
+  14:finished loading romstage                         1,448,793 (111,480)
+   1:start of romstage                                 1,472,422 (23,628)
+   2:before RAM initialization                         2,007,104 (534,682)
+   3:after RAM initialization                          3,377,926 (1,370,821)
+   4:end of romstage                                   3,660,440 (282,514)
+ 100:start of postcar                                  3,738,597 (78,156)
+ 101:end of postcar                                    3,738,598 (0)
+   8:starting to load ramstage                         3,747,293 (8,695)
+  15:starting LZMA decompress (ignore for x86)         3,794,544 (47,250)
+  16:finished LZMA decompress (ignore for x86)         3,833,868 (39,324)
+   9:finished loading ramstage                         3,884,459 (50,590)
+  10:start of ramstage                                 3,962,326 (77,867)
+  30:device enumeration                                3,971,029 (8,702)
+  40:device configuration                              5,296,771 (1,325,742)
+  50:device enable                                     5,338,859 (42,088)
+  60:device initialization                             5,344,708 (5,848)
+  70:device setup done                                 5,415,913 (71,205)
+  75:cbmem post                                        5,416,257 (343)
+  80:write tables                                      5,416,260 (2)
+  85:finalize chips                                    5,443,349 (27,089)
+  90:starting to load payload                          5,593,728 (150,378)
+  15:starting LZMA decompress (ignore for x86)         5,596,374 (2,646)
+  16:finished LZMA decompress (ignore for x86)         5,947,225 (350,850)
+  99:selfboot jump                                     5,948,649 (1,423)
+
+Total Time: 5,946,287
+CBMEM table of contents:
+    NAME                  ID        START     LENGTH  
+ 0. CONSOLE               434f4e53  7cfde000  00020000
+ 1. TIME STAMP            54494d45  7cfdd000  00000910
+ 2. MEM INFO              494d454d  7cfdc000  00000f48
+ 3. AFTER CAR             c4787a93  7cfce000  0000e000
+ 4. RAMSTAGE              9a357a9e  7ce81000  0014d000
+ 5. SMM BACKUP            07e9acee  7ce71000  00010000
+ 6. SMM COMBUFFER         53534d32  7ce61000  00010000
+ 7. COREBOOT              43425442  7ce59000  00008000
+ 8. ACPI                  41435049  7ce35000  00024000
+ 9. SMBIOS                534d4254  7ce2d000  00008000
+10. USBDEBUG              e4c1deb9  7cffeba0  00000050
+11. RO MCACHE             524d5346  7cffe8c0  000002e0
+12. FMAP                  464d4150  7cffe7a0  0000010a
+13. ROMSTAGE              47545352  7cffe780  00000004
+14. ROMSTG STCK           90357ac4  7cffe6c0  000000a8
+15. ACPI GNVS             474e5653  7cffe5c0  00000100
+
+*** Pre-CBMEM romstage console overflowed, log truncated! ***
+s...
+[DEBUG]  Back from systemagent_early_init()
+[INFO ]  Intel ME early init
+[INFO ]  Intel ME firmware is ready
+[DEBUG]  ME: Requested 0MB UMA
+[DEBUG]  Starting native Platform init
+[DEBUG]  DMI: Running at X4 @ 5000MT/s
+[DEBUG]  FMAP: area RW_MRC_CACHE found @ 100000 (65536 bytes)
+[DEBUG]  Trying stored timings.
+[DEBUG]  Starting Ivy Bridge RAM training (fast boot).
+[DEBUG]  100MHz reference clock support: no
+[DEBUG]  PLL_REF100_CFG value: 0x0
+[DEBUG]  Trying CAS 9, tCK 384.
+[DEBUG]  Found compatible clock, CAS pair.
+[DEBUG]  Selected DRAM frequency: 666 MHz
+[DEBUG]  Selected CAS latency   : 9T
+[DEBUG]  MPLL busy... done in 10 us
+[DEBUG]  MPLL frequency is set at : 666 MHz
+[DEBUG]  Done dimm mapping
+[DEBUG]  Update PCI-E configuration space:
+[DEBUG]  PCI(0, 0, 0)[a0] = 80000000
+[DEBUG]  PCI(0, 0, 0)[a4] = 0
+[DEBUG]  PCI(0, 0, 0)[bc] = 7fa00000
+[DEBUG]  PCI(0, 0, 0)[a8] = 600000
+[DEBUG]  PCI(0, 0, 0)[ac] = 1
+[DEBUG]  PCI(0, 0, 0)[b8] = 7d000000
+[DEBUG]  PCI(0, 0, 0)[b0] = 7da00000
+[DEBUG]  PCI(0, 0, 0)[b4] = 7d800000
+[DEBUG]  Done memory map
+[DEBUG]  Done io registers
+[DEBUG]  t123: 1912, 6000, 7620
+[NOTE ]  ME: Wrong mode : 2
+[NOTE ]  ME: FWS2: 0x120a0000
+[NOTE ]  ME:  Bist in progress: 0x0
+[NOTE ]  ME:  ICC Status      : 0x0
+[NOTE ]  ME:  Invoke MEBx     : 0x0
+[NOTE ]  ME:  CPU replaced    : 0x0
+[NOTE ]  ME:  MBP ready       : 0x0
+[NOTE ]  ME:  MFS failure     : 0x0
+[NOTE ]  ME:  Warm reset req  : 0x0
+[NOTE ]  ME:  CPU repl valid  : 0x0
+[NOTE ]  ME:  (Reserved)      : 0x0
+[NOTE ]  ME:  FW update req   : 0x0
+[NOTE ]  ME:  (Reserved)      : 0x0
+[NOTE ]  ME:  Current state   : 0xa
+[NOTE ]  ME:  Current PM event: 0x2
+[NOTE ]  ME:  Progress code   : 0x1
+[NOTE ]  Waited long enough, or CPU was not replaced, continue...
+[NOTE ]  PASSED! Tell ME that DRAM is ready
+[NOTE ]  ME: ME is reporting as disabled, so not waiting for a response.
+[NOTE ]  ME: FWS2: 0x120a0000
+[NOTE ]  ME:  Bist in progress: 0x0
+[NOTE ]  ME:  ICC Status      : 0x0
+[NOTE ]  ME:  Invoke MEBx     : 0x0
+[NOTE ]  ME:  CPU replaced    : 0x0
+[NOTE ]  ME:  MBP ready       : 0x0
+[NOTE ]  ME:  MFS failure     : 0x0
+[NOTE ]  ME:  Warm reset req  : 0x0
+[NOTE ]  ME:  CPU repl valid  : 0x0
+[NOTE ]  ME:  (Reserved)      : 0x0
+[NOTE ]  ME:  FW update req   : 0x0
+[NOTE ]  ME:  (Reserved)      : 0x0
+[NOTE ]  ME:  Current state   : 0xa
+[NOTE ]  ME:  Current PM event: 0x2
+[NOTE ]  ME:  Progress code   : 0x1
+[NOTE ]  ME: Requested BIOS Action: No DID Ack received
+[DEBUG]  ME: FW Partition Table      : OK
+[DEBUG]  ME: Bringup Loader Failure  : NO
+[DEBUG]  ME: Firmware Init Complete  : NO
+[DEBUG]  ME: Manufacturing Mode      : YES
+[DEBUG]  ME: Boot Options Present    : NO
+[DEBUG]  ME: Update In Progress      : NO
+[DEBUG]  ME: Current Working State   : Initializing
+[DEBUG]  ME: Current Operation State : Bring up
+[DEBUG]  ME: Current Operation Mode  : Debug or Disabled by AltDisableBit
+[DEBUG]  ME: Error Code              : No Error
+[DEBUG]  ME: Progress Phase          : BUP Phase
+[DEBUG]  ME: Power Management Event  : Clean global reset
+[DEBUG]  ME: Progress Phase State    : Check to see if straps say ME DISABLED
+[DEBUG]  memcfg DDR3 ref clock 133 MHz
+[DEBUG]  memcfg DDR3 clock 1330 MHz
+[DEBUG]  memcfg channel assignment: A: 1, B  0, C  2
+[DEBUG]  memcfg channel[0] config (00000000):
+[DEBUG]     ECC inactive
+[DEBUG]     enhanced interleave mode off
+[DEBUG]     rank interleave off
+[DEBUG]     DIMMA 0 MB width x8 single rank, selected
+[DEBUG]     DIMMB 0 MB width x8 single rank
+[DEBUG]  memcfg channel[1] config (00600008):
+[DEBUG]     ECC inactive
+[DEBUG]     enhanced interleave mode on
+[DEBUG]     rank interleave on
+[DEBUG]     DIMMA 2048 MB width x8 single rank, selected
+[DEBUG]     DIMMB 0 MB width x8 single rank
+[DEBUG]  CBMEM:
+[DEBUG]  IMD: root @ 0x7cfff000 254 entries.
+[DEBUG]  IMD: root @ 0x7cffec00 62 entries.
+[DEBUG]  FMAP: area COREBOOT found @ 150200 (2817536 bytes)
+[DEBUG]  External stage cache:
+[DEBUG]  IMD: root @ 0x7d3ff000 254 entries.
+[DEBUG]  IMD: root @ 0x7d3fec00 62 entries.
+[DEBUG]  CBMEM entry for DIMM info: 0x7cfdc000
+[DEBUG]  SMM Memory Map
+[DEBUG]  SMRAM       : 0x7d000000 0x800000
+[DEBUG]   Subregion 0: 0x7d000000 0x300000
+[DEBUG]   Subregion 1: 0x7d300000 0x100000
+[DEBUG]   Subregion 2: 0x7d400000 0x400000
+[DEBUG]  Normal boot
+[INFO ]  CBFS: Found 'fallback/postcar' @0x3f540 size 0x61c0 in mcache @0xfeff102c
+[DEBUG]  Loading module at 0x7cfcf000 with entry 0x7cfcf031. filesize: 0x5dc8 memsize: 0xc178
+[DEBUG]  Processing 238 relocs. Offset value of 0x7afcf000
+[DEBUG]  BS: romstage times (exec / console): total (unknown) / 2105 ms
+
+
+[NOTE ]  coreboot-24.02-410-g86b145ad3efe-dirty Thu Apr 04 03:26:19 UTC 2024 x86_32 postcar starting (log level: 7)...
+[DEBUG]  usbdebug: Failed hardware init
+[DEBUG]  Normal boot
+[DEBUG]  FMAP: area COREBOOT found @ 150200 (2817536 bytes)
+[INFO ]  CBFS: Found 'fallback/ramstage' @0x1dfc0 size 0x1d61d in mcache @0x7cffe99c
+[DEBUG]  Loading module at 0x7ce82000 with entry 0x7ce82000. filesize: 0x3be78 memsize: 0x14b070
+[DEBUG]  Processing 4042 relocs. Offset value of 0x78e82000
+[DEBUG]  BS: postcar times (exec / console): total (unknown) / 161 ms
+
+
+[NOTE ]  coreboot-24.02-410-g86b145ad3efe-dirty Thu Apr 04 03:26:19 UTC 2024 x86_32 ramstage starting (log level: 7)...
+[DEBUG]  usbdebug: Failed hardware init
+[DEBUG]  Normal boot
+[INFO ]  Enumerating buses...
+[DEBUG]  Root Device scanning...
+[DEBUG]  CPU_CLUSTER: 0 enabled
+[DEBUG]  DOMAIN: 00000000 enabled
+[DEBUG]  DOMAIN: 00000000 scanning...
+[DEBUG]  PCI: pci_scan_bus for segment group 00 bus 00
+[DEBUG]  PCI: 00:00:00.0 [8086/0150] enabled
+[DEBUG]  PCI: 00:00:01.0 [8086/0151] enabled
+[DEBUG]  PCI: 00:00:02.0 [8086/0152] enabled
+[INFO ]  PCI: Static device PCI: 00:00:14.0 not found, disabling it.
+[DEBUG]  PCI: 00:00:16.0 [8086/1c3a] enabled
+[DEBUG]  PCI: 00:00:16.1: Disabling device
+[INFO ]  PCI: Static device PCI: 00:00:16.2 not found, disabling it.
+[INFO ]  PCI: Static device PCI: 00:00:16.3 not found, disabling it.
+[DEBUG]  PCI: 00:00:19.0 [8086/1503] enabled
+[DEBUG]  PCI: 00:00:1a.0 [8086/1c2d] enabled
+[DEBUG]  PCI: 00:00:1b.0 [8086/1c20] enabled
+[DEBUG]  PCI: 00:00:1c.0: No downstream device
+[INFO ]  PCH: PCIe Root Port coalescing is enabled
+[DEBUG]  PCI: 00:00:1c.0: Disabling device
+[DEBUG]  PCI: 00:00:1c.0: check set enabled
+[DEBUG]  PCI: 00:00:1c.1: Found a downstream device
+[DEBUG]  PCI: 00:00:1c.1: Disabling device
+[DEBUG]  PCI: 00:00:1c.2: Found a downstream device
+[DEBUG]  PCI: 00:00:1c.2: Disabling device
+[DEBUG]  PCI: 00:00:1c.3: Found a downstream device
+[DEBUG]  PCI: 00:00:1c.3: Disabling device
+[DEBUG]  PCI: 00:00:1c.4: Found a downstream device
+[DEBUG]  PCH: Remap PCIe function 4 to 0
+[DEBUG]  PCI: 00:00:1c.4 [8086/1c18] enabled
+[DEBUG]  PCI: 00:00:1c.5: No downstream device
+[DEBUG]  PCI: 00:00:1c.5: Disabling device
+[DEBUG]  PCI: 00:00:1c.5 [8086/1c1a] disabled
+[DEBUG]  PCI: 00:00:1c.6: No downstream device
+[DEBUG]  PCI: 00:00:1c.6: Disabling device
+[DEBUG]  PCI: 00:00:1c.6 [8086/1c1c] disabled
+[DEBUG]  PCI: 00:00:1c.7: No downstream device
+[DEBUG]  PCI: 00:00:1c.7: Disabling device
+[DEBUG]  PCH: PCIe map 1c.0 -> 1c.4
+[DEBUG]  PCH: PCIe map 1c.4 -> 1c.0
+[DEBUG]  PCI: 00:00:1d.0 [8086/1c26] enabled
+[DEBUG]  PCI: 00:00:1e.0 [8086/244e] enabled
+[DEBUG]  PCI: 00:00:1f.0 [8086/1c4a] enabled
+[DEBUG]  PCI: 00:00:1f.2 [8086/1c00] enabled
+[DEBUG]  PCI: 00:00:1f.3 [8086/1c22] enabled
+[DEBUG]  PCI: 00:00:1f.5: Disabling device
+[DEBUG]  PCI: 00:00:1f.5 [8086/1c08] disabled No operations
+[DEBUG]  PCI: 00:00:1f.6: Disabling device
+[DEBUG]  PCI: 00:00:1f.6 [8086/1c24] disabled No operations
+[WARN ]  PCI: Leftover static devices:
+[WARN ]  PCI: 00:00:01.1
+[WARN ]  PCI: 00:00:01.2
+[WARN ]  PCI: 00:00:04.0
+[WARN ]  PCI: 00:00:06.0
+[WARN ]  PCI: 00:00:14.0
+[WARN ]  PCI: 00:00:16.2
+[WARN ]  PCI: 00:00:16.3
+[WARN ]  PCI: Check your devicetree.cb.
+[DEBUG]  PCI: 00:00:01.0 scanning...
+[DEBUG]  PCI: pci_scan_bus for segment group 00 bus 01
+[DEBUG]  PCI: 00:01:00.0 [10de/104a] enabled
+[DEBUG]  PCI: 00:01:00.1 [10de/0e08] enabled
+[INFO ]  Enabling Common Clock Configuration
+[INFO ]  ASPM: Enabled L0s and L1
+[INFO ]  PCI: 00:00:01.0: Max_Payload_Size adjusted to 128
+[DEBUG]  PCI: 00:01:00.0: No LTR support
+[INFO ]  Enabling Common Clock Configuration
+[INFO ]  ASPM: Enabled L0s and L1
+[DEBUG]  PCI: 00:01:00.1: No LTR support
+[INFO ]  PCI: 00:00:01.0: Setting Max_Payload_Size to 128 for devices under this root port
+[DEBUG]  scan_bus: bus PCI: 00:00:01.0 finished in 183 msecs
+[DEBUG]  PCI: 00:00:1c.0 scanning...
+[DEBUG]  PCI: pci_scan_bus for segment group 00 bus 02
+[DEBUG]  PCI: 00:02:00.0 [1106/3403] enabled
+[INFO ]  ASPM: Enabled None
+[DEBUG]  PCI: 00:02:00.0: No LTR support
+[INFO ]  PCI: 00:00:1c.0: Setting Max_Payload_Size to 128 for devices under this root port
+[DEBUG]  scan_bus: bus PCI: 00:00:1c.0 finished in 88 msecs
+[DEBUG]  PCI: 00:00:1e.0 scanning...
+[DEBUG]  PCI: pci_scan_bus for segment group 00 bus 03
+[DEBUG]  scan_bus: bus PCI: 00:00:1e.0 finished in 18 msecs
+[DEBUG]  PCI: 00:00:1f.0 scanning...
+[DEBUG]  PNP: 002e.0 disabled
+[DEBUG]  PNP: 002e.1 disabled
+[DEBUG]  PNP: 002e.2 disabled
+[DEBUG]  PNP: 002e.3 disabled
+[DEBUG]  PNP: 002e.5 disabled
+[DEBUG]  PNP: 002e.106 enabled
+[DEBUG]  PNP: 002e.107 disabled
+[DEBUG]  PNP: 002e.207 disabled
+[DEBUG]  PNP: 002e.307 disabled
+[DEBUG]  PNP: 002e.407 disabled
+[DEBUG]  PNP: 002e.8 disabled
+[DEBUG]  PNP: 002e.108 disabled
+[DEBUG]  PNP: 002e.9 disabled
+[DEBUG]  PNP: 002e.109 disabled
+[DEBUG]  PNP: 002e.209 disabled
+[DEBUG]  PNP: 002e.309 disabled
+[DEBUG]  PNP: 002e.a enabled
+[DEBUG]  PNP: 002e.b enabled
+[DEBUG]  PNP: 002e.c enabled
+[DEBUG]  PNP: 002e.d disabled
+[DEBUG]  PNP: 002e.f enabled
+[DEBUG]  scan_bus: bus PCI: 00:00:1f.0 finished in 25 msecs
+[DEBUG]  PCI: 00:00:1f.3 scanning...
+[DEBUG]  scan_bus: bus PCI: 00:00:1f.3 finished in 0 msecs
+[DEBUG]  scan_bus: bus DOMAIN: 00000000 finished in 1263 msecs
+[DEBUG]  scan_bus: bus Root Device finished in 1301 msecs
+[INFO ]  done
+[DEBUG]  BS: BS_DEV_ENUMERATE run times (exec / console): 10 / 1315 ms
+[DEBUG]  found VGA at PCI: 00:00:02.0
+[DEBUG]  found VGA at PCI: 00:01:00.0
+[DEBUG]  Use plugin graphics over integrated.
+[DEBUG]  Setting up VGA for PCI: 00:01:00.0
+[DEBUG]  Setting PCI_BRIDGE_CTL_VGA for bridge PCI: 00:00:01.0
+[DEBUG]  Setting PCI_BRIDGE_CTL_VGA for bridge DOMAIN: 00000000
+[DEBUG]  Setting PCI_BRIDGE_CTL_VGA for bridge Root Device
+[INFO ]  Allocating resources...
+[INFO ]  Reading resources...
+[DEBUG]  Adding PCIe enhanced config space BAR 0xf0000000-0xf4000000.
+[DEBUG]  TOUUD 0x100600000 TOLUD 0x7fa00000 TOM 0x80000000
+[DEBUG]  MEBASE 0x7ffff00000
+[DEBUG]  TSEG base 0x7d000000 size 42M
+[INFO ]  Available memory below 4GB: 2000M
+[INFO ]  Available memory above 4GB: 6M
+[DEBUG]  More than one caller of pci_ehci_read_resources from PCI: 00:00:1a.0
+[DEBUG]  PCI: 00:00:1d.0 EHCI BAR hook registered
+[INFO ]  Done reading resources.
+[INFO ]  === Resource allocator: DOMAIN: 00000000 - Pass 1 (relative placement) ===
+[DEBUG]   PCI: 00:00:01.0 io: size: 0 align: 12 gran: 12 limit: ffff
+[DEBUG]    PCI: 00:01:00.0 24 *  [0x0 - 0x7f] io
+[DEBUG]   PCI: 00:00:01.0 io: size: 1000 align: 12 gran: 12 limit: ffff done
+[DEBUG]   PCI: 00:00:01.0 mem: size: 0 align: 20 gran: 20 limit: ffffffff
+[DEBUG]    PCI: 00:01:00.0 10 *  [0x0 - 0xffffff] mem
+[DEBUG]    PCI: 00:01:00.0 30 *  [0x1000000 - 0x107ffff] mem
+[DEBUG]    PCI: 00:01:00.1 10 *  [0x1080000 - 0x1083fff] mem
+[DEBUG]   PCI: 00:00:01.0 mem: size: 1100000 align: 24 gran: 20 limit: ffffffff done
+[DEBUG]   PCI: 00:00:01.0 prefmem: size: 0 align: 20 gran: 20 limit: ffffffffffffffff
+[DEBUG]    PCI: 00:01:00.0 14 *  [0x0 - 0x7ffffff] prefmem
+[DEBUG]    PCI: 00:01:00.0 1c *  [0x8000000 - 0x9ffffff] prefmem
+[DEBUG]   PCI: 00:00:01.0 prefmem: size: a000000 align: 27 gran: 20 limit: ffffffff done
+[DEBUG]   PCI: 00:00:1c.0 io: size: 0 align: 12 gran: 12 limit: ffff
+[DEBUG]    PCI: 00:02:00.0 18 *  [0x0 - 0xff] io
+[DEBUG]   PCI: 00:00:1c.0 io: size: 1000 align: 12 gran: 12 limit: ffff done
+[DEBUG]   PCI: 00:00:1c.0 mem: size: 0 align: 20 gran: 20 limit: ffffffff
+[DEBUG]    PCI: 00:02:00.0 10 *  [0x0 - 0x7ff] mem
+[DEBUG]   PCI: 00:00:1c.0 mem: size: 100000 align: 20 gran: 20 limit: ffffffff done
+[DEBUG]   PCI: 00:00:1c.0 prefmem: size: 0 align: 20 gran: 20 limit: ffffffffffffffff
+[DEBUG]   PCI: 00:00:1c.0 prefmem: size: 0 align: 20 gran: 20 limit: ffffffffffffffff done
+[INFO ]  === Resource allocator: DOMAIN: 00000000 - Pass 2 (allocating resources) ===
+[DEBUG]  DOMAIN: 00000000 io: base: 0 size: 0 align: 0 gran: 0 limit: ffff
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:1f.0 10000000 base 00000000 limit 00000fff io (fixed)
+[DEBUG]   avoid_fixed_resources: PNP: 002e.b 60 base 00000290 limit 00000291 io (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:1f.3 20 base 00000400 limit 0000041f io (fixed)
+[INFO ]   DOMAIN: 00000000: Resource ranges:
+[INFO ]   * Base: 1000, Size: f000, Tag: 100
+[DEBUG]    PCI: 00:00:01.0 1c *  [0x1000 - 0x1fff] limit: 1fff io
+[DEBUG]    PCI: 00:00:1c.0 1c *  [0x2000 - 0x2fff] limit: 2fff io
+[DEBUG]    PCI: 00:00:19.0 18 *  [0x3000 - 0x301f] limit: 301f io
+[DEBUG]    PCI: 00:00:1f.2 20 *  [0x3020 - 0x303f] limit: 303f io
+[ERROR]  Resource didn't fit!!!
+[DEBUG]    PNP: 002e.106 62 *  size: 0x8 limit: fff io
+[DEBUG]    PCI: 00:00:1f.2 10 *  [0x3040 - 0x3047] limit: 3047 io
+[DEBUG]    PCI: 00:00:1f.2 18 *  [0x3048 - 0x304f] limit: 304f io
+[DEBUG]    PCI: 00:00:1f.2 14 *  [0x3050 - 0x3053] limit: 3053 io
+[DEBUG]    PCI: 00:00:1f.2 1c *  [0x3054 - 0x3057] limit: 3057 io
+[DEBUG]  DOMAIN: 00000000 io: base: 0 size: 0 align: 0 gran: 0 limit: ffff done
+[DEBUG]  DOMAIN: 00000000 mem: base: 7d000000 size: 0 align: 0 gran: 0 limit: fdffffff
+[DEBUG]  DOMAIN: 00000000 mem: base: 100000000 size: 0 align: 0 gran: 0 limit: fffffffff
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 60 base f0000000 limit f3ffffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 03 base 00000000 limit 0009ffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 04 base 00100000 limit 7cffffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 05 base 100000000 limit 1005fffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 06 base 7d000000 limit 7f9fffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 07 base 000a0000 limit 000bffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:00.0 08 base 000c0000 limit 000fffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:1f.0 10000100 base ff000000 limit ffffffff mem (fixed)
+[DEBUG]   avoid_fixed_resources: PCI: 00:00:1f.0 03 base fec00000 limit fec00fff mem (fixed)
+[INFO ]   DOMAIN: 00000000: Resource ranges:
+[INFO ]   * Base: 7fa00000, Size: 70600000, Tag: 200
+[INFO ]   * Base: f4000000, Size: a000000, Tag: 200
+[INFO ]   * Base: 100600000, Size: effa00000, Tag: 200
+[DEBUG]    PCI: 00:00:01.0 24 *  [0x80000000 - 0x89ffffff] limit: 89ffffff prefmem
+[DEBUG]    PCI: 00:00:01.0 20 *  [0x8a000000 - 0x8b0fffff] limit: 8b0fffff mem
+[DEBUG]    PCI: 00:00:1c.0 20 *  [0x7fa00000 - 0x7fafffff] limit: 7fafffff mem
+[DEBUG]    PCI: 00:00:19.0 10 *  [0x7fb00000 - 0x7fb1ffff] limit: 7fb1ffff mem
+[DEBUG]    PCI: 00:00:1b.0 10 *  [0x7fb20000 - 0x7fb23fff] limit: 7fb23fff mem
+[DEBUG]    PCI: 00:00:19.0 14 *  [0x7fb24000 - 0x7fb24fff] limit: 7fb24fff mem
+[DEBUG]    PCI: 00:00:1f.2 24 *  [0x7fb25000 - 0x7fb257ff] limit: 7fb257ff mem
+[DEBUG]    PCI: 00:00:1a.0 10 *  [0x7fb26000 - 0x7fb263ff] limit: 7fb263ff mem
+[DEBUG]    PCI: 00:00:1d.0 10 *  [0x7fb27000 - 0x7fb273ff] limit: 7fb273ff mem
+[DEBUG]    PCI: 00:00:1f.3 10 *  [0x7fb28000 - 0x7fb280ff] limit: 7fb280ff mem
+[DEBUG]    PCI: 00:00:16.0 10 *  [0x7fb29000 - 0x7fb2900f] limit: 7fb2900f mem
+[DEBUG]  DOMAIN: 00000000 mem: base: 7d000000 size: 0 align: 0 gran: 0 limit: fdffffff done
+[DEBUG]  DOMAIN: 00000000 mem: base: 100000000 size: 0 align: 0 gran: 0 limit: fffffffff done
+[DEBUG]    PCI: 00:01:00.0 24 *  [0x1000 - 0x107f] limit: 107f io
+[DEBUG]    PCI: 00:01:00.0 14 *  [0x80000000 - 0x87ffffff] limit: 87ffffff prefmem
+[DEBUG]    PCI: 00:01:00.0 1c *  [0x88000000 - 0x89ffffff] limit: 89ffffff prefmem
+[DEBUG]    PCI: 00:01:00.0 10 *  [0x8a000000 - 0x8affffff] limit: 8affffff mem
+[DEBUG]    PCI: 00:01:00.0 30 *  [0x8b000000 - 0x8b07ffff] limit: 8b07ffff mem
+[DEBUG]    PCI: 00:01:00.1 10 *  [0x8b080000 - 0x8b083fff] limit: 8b083fff mem
+[DEBUG]    PCI: 00:02:00.0 18 *  [0x2000 - 0x20ff] limit: 20ff io
+[DEBUG]    PCI: 00:02:00.0 10 *  [0x7fa00000 - 0x7fa007ff] limit: 7fa007ff mem
+[INFO ]  === Resource allocator: DOMAIN: 00000000 - resource allocation complete ===
+[DEBUG]  PCI: 00:00:01.0 1c <- [0x0000000000001000 - 0x0000000000001fff] size 0x00001000 gran 0x0c seg 00 buio
+[DEBUG]  PCI: 00:00:01.0 24 <- [0x0000000080000000 - 0x0000000089ffffff] size 0x0a000000 gran 0x14 seg 00 buprefmem
+[DEBUG]  PCI: 00:00:01.0 20 <- [0x000000008a000000 - 0x000000008b0fffff] size 0x01100000 gran 0x14 seg 00 bumem
+[DEBUG]  PCI: 00:01:00.0 10 <- [0x000000008a000000 - 0x000000008affffff] size 0x01000000 gran 0x18 mem
+[DEBUG]  PCI: 00:01:00.0 14 <- [0x0000000080000000 - 0x0000000087ffffff] size 0x08000000 gran 0x1b prefmem64
+[DEBUG]  PCI: 00:01:00.0 1c <- [0x0000000088000000 - 0x0000000089ffffff] size 0x02000000 gran 0x19 prefmem64
+[DEBUG]  PCI: 00:01:00.0 24 <- [0x0000000000001000 - 0x000000000000107f] size 0x00000080 gran 0x07 io
+[DEBUG]  PCI: 00:01:00.0 30 <- [0x000000008b000000 - 0x000000008b07ffff] size 0x00080000 gran 0x13 romem
+[DEBUG]  PCI: 00:01:00.1 10 <- [0x000000008b080000 - 0x000000008b083fff] size 0x00004000 gran 0x0e mem
+[DEBUG]  PCI: 00:00:16.0 10 <- [0x000000007fb29000 - 0x000000007fb2900f] size 0x00000010 gran 0x04 mem64
+[DEBUG]  PCI: 00:00:19.0 10 <- [0x000000007fb00000 - 0x000000007fb1ffff] size 0x00020000 gran 0x11 mem
+[DEBUG]  PCI: 00:00:19.0 14 <- [0x000000007fb24000 - 0x000000007fb24fff] size 0x00001000 gran 0x0c mem
+[DEBUG]  PCI: 00:00:19.0 18 <- [0x0000000000003000 - 0x000000000000301f] size 0x00000020 gran 0x05 io
+[DEBUG]  PCI: 00:00:1a.0 10 <- [0x000000007fb26000 - 0x000000007fb263ff] size 0x00000400 gran 0x0a mem
+[DEBUG]  PCI: 00:00:1b.0 10 <- [0x000000007fb20000 - 0x000000007fb23fff] size 0x00004000 gran 0x0e mem64
+[DEBUG]  PCI: 00:00:1c.0 1c <- [0x0000000000002000 - 0x0000000000002fff] size 0x00001000 gran 0x0c seg 00 buio
+[DEBUG]  PCI: 00:00:1c.0 24 <- [0xffffffffffffffff - 0xfffffffffffffffe] size 0x00000000 gran 0x14 seg 00 buprefmem
+[DEBUG]  PCI: 00:00:1c.0 20 <- [0x000000007fa00000 - 0x000000007fafffff] size 0x00100000 gran 0x14 seg 00 bumem
+[DEBUG]  PCI: 00:02:00.0 10 <- [0x000000007fa00000 - 0x000000007fa007ff] size 0x00000800 gran 0x0b mem64
+[DEBUG]  PCI: 00:02:00.0 18 <- [0x0000000000002000 - 0x00000000000020ff] size 0x00000100 gran 0x08 io
+[DEBUG]  PCI: 00:00:1d.0 EHCI Debug Port hook triggered
+[DEBUG]  PCI: 00:00:1d.0 10 <- [0x000000007fb27000 - 0x000000007fb273ff] size 0x00000400 gran 0x0a mem
+[DEBUG]  PCI: 00:00:1d.0 10 <- [0x000000007fb27000 - 0x000000007fb273ff] size 0x00000400 gran 0x0a mem
+[DEBUG]  PCI: 00:00:1d.0 EHCI Debug Port relocated
+[DEBUG]  PCI: 00:00:1e.0 1c <- [0x000000000000ffff - 0x000000000000fffe] size 0x00000000 gran 0x0c seg 00 buio
+[DEBUG]  PCI: 00:00:1e.0 24 <- [0xffffffffffffffff - 0xfffffffffffffffe] size 0x00000000 gran 0x14 seg 00 buprefmem
+[DEBUG]  PCI: 00:00:1e.0 20 <- [0x00000000ffffffff - 0x00000000fffffffe] size 0x00000000 gran 0x14 seg 00 bumem
+[NOTE ]  PNP: 002e.106 62 io size: 0x0000000008 not assigned in devicetree
+[DEBUG]  PNP: 002e.b 60 <- [0x0000000000000290 - 0x0000000000000291] size 0x00000002 gran 0x01 io
+[DEBUG]  PNP: 002e.b 70 <- [0x0000000000000000 - 0x0000000000000000] size 0x00000001 gran 0x00 irq
+[DEBUG]  PCI: 00:00:1f.2 10 <- [0x0000000000003040 - 0x0000000000003047] size 0x00000008 gran 0x03 io
+[DEBUG]  PCI: 00:00:1f.2 14 <- [0x0000000000003050 - 0x0000000000003053] size 0x00000004 gran 0x02 io
+[DEBUG]  PCI: 00:00:1f.2 18 <- [0x0000000000003048 - 0x000000000000304f] size 0x00000008 gran 0x03 io
+[DEBUG]  PCI: 00:00:1f.2 1c <- [0x0000000000003054 - 0x0000000000003057] size 0x00000004 gran 0x02 io
+[DEBUG]  PCI: 00:00:1f.2 20 <- [0x0000000000003020 - 0x000000000000303f] size 0x00000020 gran 0x05 io
+[DEBUG]  PCI: 00:00:1f.2 24 <- [0x000000007fb25000 - 0x000000007fb257ff] size 0x00000800 gran 0x0b mem
+[DEBUG]  PCI: 00:00:1f.3 10 <- [0x000000007fb28000 - 0x000000007fb280ff] size 0x00000100 gran 0x08 mem64
+[INFO ]  Done setting resources.
+[INFO ]  Done allocating resources.
+[DEBUG]  BS: BS_DEV_RESOURCES run times (exec / console): 2 / 40 ms
+[INFO ]  Enabling resources...
+[DEBUG]  PCI: 00:00:00.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:00.0 cmd <- 06
+[DEBUG]  PCI: 00:00:01.0 bridge ctrl <- 001b
+[DEBUG]  PCI: 00:00:01.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:01.0 cmd <- 07
+[DEBUG]  PCI: 00:00:16.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:16.0 cmd <- 02
+[DEBUG]  PCI: 00:00:19.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:19.0 cmd <- 103
+[DEBUG]  PCI: 00:00:1a.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1a.0 cmd <- 102
+[DEBUG]  PCI: 00:00:1b.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1b.0 cmd <- 102
+[DEBUG]  PCI: 00:00:1c.0 bridge ctrl <- 0013
+[DEBUG]  PCI: 00:00:1c.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1c.0 cmd <- 107
+[DEBUG]  PCI: 00:00:1d.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1d.0 cmd <- 106
+[DEBUG]  PCI: 00:00:1e.0 bridge ctrl <- 0013
+[DEBUG]  PCI: 00:00:1e.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1e.0 cmd <- 100
+[DEBUG]  PCI: 00:00:1f.0 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1f.0 cmd <- 107
+[DEBUG]  PCI: 00:00:1f.2 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1f.2 cmd <- 03
+[DEBUG]  PCI: 00:00:1f.3 subsystem <- 8086/2001
+[DEBUG]  PCI: 00:00:1f.3 cmd <- 103
+[DEBUG]  PCI: 00:01:00.0 cmd <- 03
+[DEBUG]  PCI: 00:01:00.1 cmd <- 02
+[DEBUG]  PCI: 00:02:00.0 cmd <- 03
+[INFO ]  done.
+[DEBUG]  BS: BS_DEV_ENABLE run times (exec / console): 1 / 5 ms
+[INFO ]  Initializing devices...
+[DEBUG]  CPU_CLUSTER: 0 init
+[INFO ]  LAPIC 0x0 in XAPIC mode.
+[DEBUG]  MTRR: Physical address space:
+[DEBUG]  0x0000000000000000 - 0x000000000009ffff size 0x000a0000 type 6
+[DEBUG]  0x00000000000a0000 - 0x00000000000bffff size 0x00020000 type 0
+[DEBUG]  0x00000000000c0000 - 0x000000007cffffff size 0x7cf40000 type 6
+[DEBUG]  0x000000007d000000 - 0x000000007fffffff size 0x03000000 type 0
+[DEBUG]  0x0000000080000000 - 0x0000000089ffffff size 0x0a000000 type 1
+[DEBUG]  0x000000008a000000 - 0x00000000ffffffff size 0x76000000 type 0
+[DEBUG]  0x0000000100000000 - 0x00000001005fffff size 0x00600000 type 6
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x250 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x258 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x259 0x0000000000000000
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x268 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x269 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x26a 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x26b 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x26c 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x26d 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x26e 0x0606060606060606
+[DEBUG]  apic_id 0x0: MTRR: Fixed MSR 0x26f 0x0606060606060606
+[DEBUG]  apic_id 0x0 setup mtrr for CPU physical address size: 36 bits
+[DEBUG]  MTRR: default type WB/UC MTRR counts: 9/6.
+[DEBUG]  MTRR: UC selected as default type.
+[DEBUG]  MTRR: 0 base 0x0000000000000000 mask 0x0000000f80000000 type 6
+[DEBUG]  MTRR: 1 base 0x000000007d000000 mask 0x0000000fff000000 type 0
+[DEBUG]  MTRR: 2 base 0x000000007e000000 mask 0x0000000ffe000000 type 0
+[DEBUG]  MTRR: 3 base 0x0000000080000000 mask 0x0000000ff8000000 type 1
+[DEBUG]  MTRR: 4 base 0x0000000088000000 mask 0x0000000ffe000000 type 1
+[DEBUG]  MTRR: 5 base 0x0000000100000000 mask 0x0000000fff800000 type 6
+
+[DEBUG]  MTRR check
+[DEBUG]  Fixed MTRRs   : Enabled
+[DEBUG]  Variable MTRRs: Enabled
+
+[DEBUG]  CPU has 2 cores, 2 threads enabled.
+[DEBUG]  Setting up SMI for CPU
+[INFO ]  Will perform SMM setup.
+[DEBUG]  microcode: sig=0x306a9 pf=0x2 revision=0x21
+[DEBUG]  FMAP: area COREBOOT found @ 150200 (2817536 bytes)
+[INFO ]  CBFS: Found 'cpu_microcode_blob.bin' @0x17780 size 0x6800 in mcache @0x7cffe96c
+[INFO ]  CPU: Intel(R) Pentium(R) CPU G2010 @ 2.80GHz.
+[INFO ]  LAPIC 0x0 in XAPIC mode.
+[DEBUG]  CPU: APIC: 00 enabled
+[DEBUG]  CPU: APIC: 01 enabled
+[DEBUG]  Loading module at 0x00030000 with entry 0x00030000. filesize: 0x178 memsize: 0x178
+[DEBUG]  Processing 16 relocs. Offset value of 0x00030000
+[DEBUG]  Attempting to start 1 APs
+[DEBUG]  Waiting for 10ms after sending INIT.
+[DEBUG]  Waiting for SIPI to complete...
+[DEBUG]  done.
+[DEBUG]  Waiting for SIPI to complete...
+[DEBUG]  done.
+[INFO ]  LAPIC 0x2 in XAPIC mode.
+[INFO ]  AP: slot 1 apic_id 2, MCU rev: 0x00000021
+[DEBUG]  Loading module at 0x00038000 with entry 0x00038000. filesize: 0x1a0 memsize: 0x1a0
+[DEBUG]  Processing 9 relocs. Offset value of 0x00038000
+[DEBUG]  smm_module_setup_stub: stack_top = 0x7d000800
+[DEBUG]  smm_module_setup_stub: per cpu stack_size = 0x400
+[DEBUG]  smm_module_setup_stub: runtime.smm_size = 0x10000
+[DEBUG]  SMM Module: stub loaded at 38000. Will call 0x7cea176f
+[DEBUG]  Installing permanent SMM handler to 0x7d000000
+[DEBUG]  HANDLER      [0x7d2fb000-0x7d2ff3a8]
+
+[DEBUG]  CPU 0
+[DEBUG]    ss0        [0x7d2fac00-0x7d2fb000]
+[DEBUG]    stub0      [0x7d2f3000-0x7d2f31a0]
+
+[DEBUG]  CPU 1
+[DEBUG]    ss1        [0x7d2fa800-0x7d2fac00]
+[DEBUG]    stub1      [0x7d2f2c00-0x7d2f2da0]
+
+[DEBUG]  stacks       [0x7d000000-0x7d000800]
+[DEBUG]  Loading module at 0x7d2fb000 with entry 0x7d2fbbf4. filesize: 0x4288 memsize: 0x43a8
+[DEBUG]  Processing 259 relocs. Offset value of 0x7d2fb000
+[DEBUG]  Loading module at 0x7d2f3000 with entry 0x7d2f3000. filesize: 0x1a0 memsize: 0x1a0
+[DEBUG]  Processing 9 relocs. Offset value of 0x7d2f3000
+[DEBUG]  smm_module_setup_stub: stack_top = 0x7d000800
+[DEBUG]  smm_module_setup_stub: per cpu stack_size = 0x400
+[DEBUG]  smm_module_setup_stub: runtime.smm_size = 0x300000
+[DEBUG]  SMM Module: placing smm entry code at 7d2f2c00,  cpu # 0x1
+[DEBUG]  SMM Module: stub loaded at 7d2f3000. Will call 0x7d2fbbf4
+[INFO ]  smm_do_relocation : curr_smbase 0x30000 perm_smbase 0x7d2eb000, cpu = 0
+[DEBUG]  In relocation handler: cpu 0
+[DEBUG]  New SMBASE=0x7d2eb000 IEDBASE=0x7d400000
+[DEBUG]  Writing SMRR. base = 0x7d000006, mask=0xff800800
+[DEBUG]  Relocation complete.
+[INFO ]  microcode: Update skipped, already up-to-date
+[INFO ]  smm_do_relocation : curr_smbase 0x30000 perm_smbase 0x7d2eac00, cpu = 1
+[DEBUG]  In relocation handler: cpu 1
+[DEBUG]  New SMBASE=0x7d2eac00 IEDBASE=0x7d400000
+[DEBUG]  Writing SMRR. base = 0x7d000006, mask=0xff800800
+[DEBUG]  Relocation complete.
+[INFO ]  microcode: Update skipped, already up-to-date
+[INFO ]  Initializing CPU #0
+[DEBUG]  CPU: vendor Intel device 306a9
+[DEBUG]  CPU: family 06, model 3a, stepping 09
+[INFO ]  CPU: Intel(R) Pentium(R) CPU G2010 @ 2.80GHz.
+[INFO ]  CPU: cpuid(1) 0x306a9
+[INFO ]  CPU: AES NOT supported
+[INFO ]  CPU: TXT NOT supported
+[INFO ]  CPU: VT supported
+[DEBUG]  VMX status: enabled
+[DEBUG]  IA32_FEATURE_CONTROL status: locked
+[DEBUG]  cpu: energy policy set to 6
+[DEBUG]  model_x06ax: frequency set to 2800
+[INFO ]  Turbo is unavailable
+[WARN ]  XE: Cannot enable, CPU does not support ratio limit
+[INFO ]  CPU #0 initialized
+[INFO ]  Initializing CPU #1
+[DEBUG]  CPU: vendor Intel device 306a9
+[DEBUG]  CPU: family 06, model 3a, stepping 09
+[INFO ]  CPU: Intel(R) Pentium(R) CPU G2010 @ 2.80GHz.
+[INFO ]  CPU: cpuid(1) 0x306a9
+[INFO ]  CPU: AES NOT supported
+[INFO ]  CPU: TXT NOT supported
+[INFO ]  CPU: VT supported
+[DEBUG]  VMX status: enabled
+[DEBUG]  IA32_FEATURE_CONTROL status: locked
+[DEBUG]  cpu: energy policy set to 6
+[DEBUG]  model_x06ax: frequency set to 2800
+[WARN ]  XE: Cannot enable, CPU does not support ratio limit
+[INFO ]  CPU #1 initialized
+[INFO ]  bsp_do_flight_plan done after 20 msecs.
+[DEBUG]  SMI_STS: 
+[DEBUG]  GPE0_STS: GPIO15 GPIO14 GPIO11 GPIO10 GPIO9 GPIO7 GPIO1 GPIO0 
+[DEBUG]  ALT_GP_SMI_STS: GPI14 GPI13 GPI11 GPI10 GPI9 GPI7 GPI5 GPI4 GPI3 GPI2 GPI1 GPI0 
+[DEBUG]  TCO_STS: 
+[DEBUG]  Locking SMM.
+[DEBUG]  CPU_CLUSTER: 0 init finished in 43 msecs
+[DEBUG]  PCI: 00:00:00.0 init
+[DEBUG]  Disabling PEG12.
+[DEBUG]  Disabling PEG11.
+[DEBUG]  Disabling IGD.
+[DEBUG]  Disabling Device 4.
+[DEBUG]  Disabling PEG60.
+[DEBUG]  Disabling Device 7.
+[DEBUG]  Set BIOS_RESET_CPL
+[DEBUG]  CPU TDP: 55 Watts
+[DEBUG]  PCI: 00:00:00.0 init finished in 1 msecs
+[DEBUG]  PCI: 00:00:01.0 init
+[DEBUG]  PCI: 00:00:01.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:16.0 init
+[DEBUG]  ME: FW Partition Table      : OK
+[DEBUG]  ME: Bringup Loader Failure  : NO
+[DEBUG]  ME: Firmware Init Complete  : NO
+[DEBUG]  ME: Manufacturing Mode      : YES
+[DEBUG]  ME: Boot Options Present    : NO
+[DEBUG]  ME: Update In Progress      : NO
+[DEBUG]  ME: Current Working State   : Initializing
+[DEBUG]  ME: Current Operation State : Bring up
+[DEBUG]  ME: Current Operation Mode  : Debug or Disabled by AltDisableBit
+[DEBUG]  ME: Error Code              : No Error
+[DEBUG]  ME: Progress Phase          : BUP Phase
+[DEBUG]  ME: Power Management Event  : Clean global reset
+[DEBUG]  ME: Progress Phase State    : Check to see if straps say ME DISABLED
+[NOTE ]  ME: BIOS path: Disable
+[DEBUG]  ME: me_state=0, me_state_prev=0
+[DEBUG]  PCI: 00:00:16.0: Disabling device
+[DEBUG]  PCI: 00:00:16.0 init finished in 3 msecs
+[DEBUG]  PCI: 00:00:19.0 init
+[DEBUG]  PCI: 00:00:19.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:1a.0 init
+[DEBUG]  EHCI: Setting up controller.. done.
+[DEBUG]  PCI: 00:00:1a.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:1b.0 init
+[DEBUG]  Azalia: base = 0x7fb20000
+[DEBUG]  Azalia: codec_mask = 09
+[DEBUG]  azalia_audio: Initializing codec #3
+[DEBUG]  azalia_audio: codec viddid: 80862805
+[DEBUG]  azalia_audio: verb_size: 16
+[DEBUG]  azalia_audio: verb loaded.
+[DEBUG]  azalia_audio: Initializing codec #0
+[DEBUG]  azalia_audio: codec viddid: 10ec0892
+[DEBUG]  azalia_audio: verb_size: 60
+[DEBUG]  azalia_audio: verb loaded.
+[DEBUG]  PCI: 00:00:1b.0 init finished in 6 msecs
+[DEBUG]  PCI: 00:00:1c.0 init
+[DEBUG]  Initializing PCH PCIe bridge.
+[DEBUG]  PCI: 00:00:1c.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:1d.0 init
+[DEBUG]  EHCI: Setting up controller.. done.
+[DEBUG]  PCI: 00:00:1d.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:1e.0 init
+[DEBUG]  PCI init.
+[DEBUG]  PCI: 00:00:1e.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:1f.0 init
+[DEBUG]  pch: lpc_init
+[INFO ]  PCH: detected H67, device id: 0x1c4a, rev id 0x5
+[DEBUG]  IOAPIC: Initializing IOAPIC at fec00000
+[DEBUG]  IOAPIC: ID = 0x00
+[DEBUG]  IOAPIC: 24 interrupts
+[DEBUG]  IOAPIC: Clearing IOAPIC at fec00000
+[DEBUG]  IOAPIC: Bootstrap Processor Local APIC = 0x00
+[INFO ]  Set power off after power failure.
+[INFO ]  NMI sources disabled.
+[DEBUG]  CougarPoint PM init
+[DEBUG]  RTC: failed = 0x0
+[DEBUG]  RTC Init
+[DEBUG]  apm_control: Disabling ACPI.
+[DEBUG]  APMC done.
+[DEBUG]  pch_spi_init
+[DEBUG]  PCI: 00:00:1f.0 init finished in 2 msecs
+[DEBUG]  PCI: 00:00:1f.2 init
+[DEBUG]  SATA: Initializing...
+[DEBUG]  SATA: Controller in AHCI mode.
+[DEBUG]  ABAR: 0x7fb25000
+[DEBUG]  PCI: 00:00:1f.2 init finished in 0 msecs
+[DEBUG]  PCI: 00:00:1f.3 init
+[DEBUG]  PCI: 00:00:1f.3 init finished in 0 msecs
+[DEBUG]  PCI: 00:01:00.0 init
+[DEBUG]  PCI: 00:01:00.0 init finished in 0 msecs
+[DEBUG]  PCI: 00:01:00.1 init
+[DEBUG]  PCI: 00:01:00.1 init finished in 0 msecs
+[DEBUG]  PCI: 00:02:00.0 init
+[DEBUG]  PCI: 00:02:00.0 init finished in 0 msecs
+[DEBUG]  PNP: 002e.106 init
+[DEBUG]  PNP: 002e.106 init finished in 0 msecs
+[DEBUG]  PNP: 002e.a init
+[INFO ]  set power off after power fail
+[DEBUG]  PNP: 002e.a init finished in 0 msecs
+[DEBUG]  PNP: 002e.b init
+[DEBUG]  PNP: 002e.b init finished in 0 msecs
+[DEBUG]  PNP: 002e.c init
+[DEBUG]  PNP: 002e.c init finished in 0 msecs
+[DEBUG]  PNP: 002e.f init
+[DEBUG]  PNP: 002e.f init finished in 0 msecs
+[INFO ]  Devices initialized
+[DEBUG]  BS: BS_DEV_INIT run times (exec / console): 28 / 40 ms
+[DEBUG]  FMAP: area SMMSTORE found @ 110000 (262144 bytes)
+[INFO ]  Manufacturer: ef
+[INFO ]  SF: Detected ef 4016 with sector size 0x1000, total 0x400000
+[DEBUG]  smm store: 4 # blocks with size 0x10000
+[INFO ]  SMMSTORE: Setting up SMI handler
+[DEBUG]  BS: BS_DEV_INIT exit times (exec / console): 0 / 1 ms
+[INFO ]  Finalize devices...
+[DEBUG]  PCI: 00:00:1f.0 final
+[DEBUG]  apm_control: Finalizing SMM.
+[DEBUG]  APMC done.
+[INFO ]  Devices finalized
+[DEBUG]  BS: BS_POST_DEVICE run times (exec / console): 0 / 1 ms
+[INFO ]  CBFS: Found 'fallback/dsdt.aml' @0x3c780 size 0x2353 in mcache @0x7cffea68
+[WARN ]  CBFS: 'fallback/slic' not found.
+[INFO ]  ACPI: Writing ACPI tables at 7ce35000.
+[DEBUG]  ACPI:    * FACS
+[DEBUG]  ACPI:    * FACP
+[DEBUG]  ACPI: added table 1/32, length now 44
+[DEBUG]  Found 1 CPU(s) with 2 core(s) each.
+[DEBUG]  Supported C-states:  C0 C1 C1E C3 C6
+[DEBUG]  PSS: 2800MHz power 55000 control 0x1c00 status 0x1c00
+[DEBUG]  PSS: 2600MHz power 49866 control 0x1a00 status 0x1a00
+[DEBUG]  PSS: 2400MHz power 44966 control 0x1800 status 0x1800
+[DEBUG]  PSS: 2200MHz power 40239 control 0x1600 status 0x1600
+[DEBUG]  PSS: 2000MHz power 35774 control 0x1400 status 0x1400
+[DEBUG]  PSS: 1800MHz power 31390 control 0x1200 status 0x1200
+[DEBUG]  PSS: 1600MHz power 27259 control 0x1000 status 0x1000
+[INFO ]  Requested C-state C7 not supported, using C6 instead
+[DEBUG]  Advertising ACPI C State type C1 as CPU C1
+[DEBUG]  Advertising ACPI C State type C2 as CPU C3
+[DEBUG]  Advertising ACPI C State type C3 as CPU C6
+[DEBUG]  PSS: 2800MHz power 55000 control 0x1c00 status 0x1c00
+[DEBUG]  PSS: 2600MHz power 49866 control 0x1a00 status 0x1a00
+[DEBUG]  PSS: 2400MHz power 44966 control 0x1800 status 0x1800
+[DEBUG]  PSS: 2200MHz power 40239 control 0x1600 status 0x1600
+[DEBUG]  PSS: 2000MHz power 35774 control 0x1400 status 0x1400
+[DEBUG]  PSS: 1800MHz power 31390 control 0x1200 status 0x1200
+[DEBUG]  PSS: 1600MHz power 27259 control 0x1000 status 0x1000
+[INFO ]  Requested C-state C7 not supported, using C6 instead
+[DEBUG]  Advertising ACPI C State type C1 as CPU C1
+[DEBUG]  Advertising ACPI C State type C2 as CPU C3
+[DEBUG]  Advertising ACPI C State type C3 as CPU C6
+[DEBUG]  PCI space above 4GB MMIO is at 0x100600000, len = 0xeffa00000
+[DEBUG]  Generating ACPI PIRQ entries
+[WARN ]  CBFS: 'pci10de,104a.rom' not found.
+[DEBUG]  PCI Option ROM loading disabled for PCI: 00:01:00.0
+[WARN ]  PCI: 00:01:00.0: Missing PCI Option ROM
+[DEBUG]  ACPI:    * SSDT
+[DEBUG]  ACPI: added table 2/32, length now 52
+[DEBUG]  ACPI:    * MCFG
+[DEBUG]  ACPI: added table 3/32, length now 60
+[DEBUG]  IOAPIC: 24 interrupts
+[DEBUG]  ACPI:    * APIC
+[DEBUG]  ACPI: added table 4/32, length now 68
+[DEBUG]  ACPI:    * SPCR
+[DEBUG]  ACPI: added table 5/32, length now 76
+[DEBUG]  current = 7ce38310
+[DEBUG]  ACPI:    * HPET
+[DEBUG]  ACPI: added table 6/32, length now 84
+[INFO ]  ACPI: done.
+[DEBUG]  ACPI tables: 13136 bytes.
+[DEBUG]  smbios_write_tables: 7ce2d000
+[DEBUG]  SMBIOS firmware version is set to coreboot_version: '24.02-410-g86b145ad3efe-dirty'
+[INFO ]  Create SMBIOS type 16
+[INFO ]  Create SMBIOS type 17
+[INFO ]  Create SMBIOS type 20
+[DEBUG]  SMBIOS tables: 800 bytes.
+[DEBUG]  Writing table forward entry at 0x00000500
+[DEBUG]  Wrote coreboot table at: 0x00000500, 0x10 bytes, checksum f2f8
+[DEBUG]  Writing coreboot table at 0x7ce59000
+[DEBUG]   0. 0000000000000000-0000000000000fff: CONFIGURATION TABLES
+[DEBUG]   1. 0000000000001000-000000000009ffff: RAM
+[DEBUG]   2. 00000000000a0000-00000000000fffff: RESERVED
+[DEBUG]   3. 0000000000100000-000000007ce2cfff: RAM
+[DEBUG]   4. 000000007ce2d000-000000007ce81fff: CONFIGURATION TABLES
+[DEBUG]   5. 000000007ce82000-000000007cfcdfff: RAMSTAGE
+[DEBUG]   6. 000000007cfce000-000000007cffffff: CONFIGURATION TABLES
+[DEBUG]   7. 000000007d000000-000000007f9fffff: RESERVED
+[DEBUG]   8. 00000000f0000000-00000000f3ffffff: RESERVED
+[DEBUG]   9. 0000000100000000-00000001005fffff: RAM
+[DEBUG]  Wrote coreboot table at: 0x7ce59000, 0x3d8 bytes, checksum af3a
+[DEBUG]  coreboot table: 1008 bytes.
+[DEBUG]  IMD ROOT    0. 0x7cfff000 0x00001000
+[DEBUG]  IMD SMALL   1. 0x7cffe000 0x00001000
+[DEBUG]  CONSOLE     2. 0x7cfde000 0x00020000
+[DEBUG]  TIME STAMP  3. 0x7cfdd000 0x00000910
+[DEBUG]  MEM INFO    4. 0x7cfdc000 0x00000f48
+[DEBUG]  AFTER CAR   5. 0x7cfce000 0x0000e000
+[DEBUG]  RAMSTAGE    6. 0x7ce81000 0x0014d000
+[DEBUG]  SMM BACKUP  7. 0x7ce71000 0x00010000
+[DEBUG]  SMM COMBUFFER 8. 0x7ce61000 0x00010000
+[DEBUG]  COREBOOT    9. 0x7ce59000 0x00008000
+[DEBUG]  ACPI       10. 0x7ce35000 0x00024000
+[DEBUG]  SMBIOS     11. 0x7ce2d000 0x00008000
+[DEBUG]  IMD small region:
+[DEBUG]    IMD ROOT    0. 0x7cffec00 0x00000400
+[DEBUG]    USBDEBUG    1. 0x7cffeba0 0x00000050
+[DEBUG]    RO MCACHE   2. 0x7cffe8c0 0x000002e0
+[DEBUG]    FMAP        3. 0x7cffe7a0 0x0000010a
+[DEBUG]    ROMSTAGE    4. 0x7cffe780 0x00000004
+[DEBUG]    ROMSTG STCK 5. 0x7cffe6c0 0x000000a8
+[DEBUG]    ACPI GNVS   6. 0x7cffe5c0 0x00000100
+[DEBUG]  BS: BS_WRITE_TABLES run times (exec / console): 153 / 24 ms
+[INFO ]  CBFS: Found 'fallback/payload' @0x45780 size 0x106774 in mcache @0x7cffeb30
+[DEBUG]  Checking segment from ROM address 0xffd959ac
+[DEBUG]  Checking segment from ROM address 0xffd959c8
+[DEBUG]  Loading segment from ROM address 0xffd959ac
+[DEBUG]    code (compression=1)
+[DEBUG]    New segment dstaddr 0x00800000 memsize 0x1000000 srcaddr 0xffd959e4 filesize 0x10673c
+[DEBUG]  Loading Segment: addr: 0x00800000 memsz: 0x0000000001000000 filesz: 0x000000000010673c
+[DEBUG]  using LZMA
+[DEBUG]  Loading segment from ROM address 0xffd959c8
+[DEBUG]    Entry Point 0x0080355c
+[DEBUG]  BS: BS_PAYLOAD_LOAD run times (exec / console): 351 / 3 ms
+[DEBUG]  ICH-NM10-PCH: watchdog disabled
+[DEBUG]  Jumping to boot code at 0x0080355c(0x7ce59000)
+sizeof(UINTN) = 0x4
+Guessing Top of Lower Usable DRAM:
+0. 0000000000000000 - 0000000000000FFF [10]
+1. 0000000000001000 - 000000000009FFFF [01]
+2. 00000000000A0000 - 00000000000FFFFF [02]
+3. 0000000000100000 - 000000007CE2CFFF [01]
+4. 000000007CE2D000 - 000000007CFFFFFF [10]
+5. 000000007D000000 - 000000007F9FFFFF [02]
+6. 00000000F0000000 - 00000000F3FFFFFF [02]
+7. 0000000100000000 - 00000001005FFFFF [01]
+Assuming TOLUD = 0x7FA00000
+Building ResourceDescriptorHobs for usable memory:
+0. 0000000000000000 - 0000000000000FFF [10]
+1. 0000000000001000 - 000000000009FFFF [01]
+buildhob: base = 0x1000, size = 0x9F000, type = 0x0
+2. 00000000000A0000 - 00000000000FFFFF [02]
+3. 0000000000100000 - 000000007CE2CFFF [01]
+buildhob: base = 0x100000, size = 0x7CD2D000, type = 0x0
+4. 000000007CE2D000 - 000000007CFFFFFF [10]
+5. 000000007D000000 - 000000007F9FFFFF [02]
+6. 00000000F0000000 - 00000000F3FFFFFF [02]
+7. 0000000100000000 - 00000001005FFFFF [01]
+buildhob: base = 0x100000000, size = 0x600000, type = 0x0
+Found Smm Store information
+block size: 0x10000
+number of blocks: 0x4
+communication buffer: 0x7CE61000
+communication buffer size: 0x10000
+MMIO address of store: 0xFFD10000
+Created SmmStore info hob
+Create smbios table gUniversalPayloadSmbiosTableGuid guid hob
+Find CbMemTable Id 0x534D4254, base 7CE2D000, size 0x8000
+Detected Smbios Table at 0x7CE2D000
+Create ACPI table gUniversalPayloadAcpiTableGuid guid hob
+Find CbMemTable Id 0x41435049, base 7CE35000, size 0x24000
+Detected ACPI Table at 0x7CE35000
+Rsdp at 0x7CE35000
+Rsdt at 0x7CE35030, Xsdt at 0x7CE350E0
+Found Fadt in Rsdt
+Found MM config address in Rsdt
+Found Fadt in Xsdt
+Found MM config address in Xsdt
+PmCtrl  Reg 0x504
+PmTimer Reg 0x508
+Reset   Reg 0xCF9
+Reset   Value 0x6
+PmEvt   Reg 0x500
+PmGpeEn Reg 0x528
+PcieBaseAddr 0xF0000000
+PcieBaseSize 0x4000000
+TPM 2.0 present 0
+TPM 1.2 present 0
+Create acpi board info guid hob
+Building ResourceDescriptorHobs for reserved memory:
+0. 0000000000000000 - 0000000000000FFF [10]
+buildhob: base = 0x0, size = 0x1000, type = 0x5
+1. 0000000000001000 - 000000000009FFFF [01]
+2. 00000000000A0000 - 00000000000FFFFF [02]
+buildhob: base = 0xA0000, size = 0x60000, type = 0x5
+3. 0000000000100000 - 000000007CE2CFFF [01]
+4. 000000007CE2D000 - 000000007CFFFFFF [10]
+buildhob: base = 0x7CE2D000, size = 0x1D3000, type = 0x5
+5. 000000007D000000 - 000000007F9FFFFF [02]
+buildhob: base = 0x7D000000, size = 0x2A00000, type = 0x5
+6. 00000000F0000000 - 00000000F3FFFFFF [02]
+buildhob: base = 0xF0000000, size = 0x4000000, type = 0x1
+7. 0000000100000000 - 00000001005FFFFF [01]
+DxeCoreEntryPoint = 0x57E919A
+PayloadEntry: AddressBits=36 5LevelPaging=0 1GPage=0
+Pml5=1 Pml4=1 Pdp=64 TotalPage=66
+HandOffToDxeCore() Stack Base: 0x57AF000, Stack Size: 0x20000
+PROGRESS CODE: V03040003 I0
+Loading driver C68DAA4E-7AB5-41E8-A91D-5954421053F3
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C94F440
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C948018
+ProtectUefiImageCommon - 0x7C94F440
+  - 0x000000007C949000 - 0x0000000000002100
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+Loading driver B601F8C4-43B7-4784-95B1-F4226CB40CEE
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C9480C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C948C18
+ProtectUefiImageCommon - 0x7C9480C0
+  - 0x000000007CCF5000 - 0x0000000000006000
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: B7DFB4E1-052F-449F-87BE-9818FC91B733 7CCF90C0
+PROGRESS CODE: V03040003 I0
+Loading driver A0402FCA-6B25-4CEA-B7DD-C08F99714B29
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C94E040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C94EF18
+ProtectUefiImageCommon - 0x7C94E040
+  - 0x000000007CCED000 - 0x0000000000008000
+PROGRESS CODE: V03040002 I0
+SmmStoreLibInitialize: No memory space descriptor for com buffer found
+NvStorageBase:0xFFD10000, NvStorageSize:0x40000
+FvbInitialize: FVB header is valid
+InstallProtocolInterface: D1A86E3F-0707-4C35-83CD-DC2C29C891A3 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7CDF6E00
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 7CDF6DA8
+SmmStoreInitInstance: Created a new instance
+PROGRESS CODE: V03040003 I0
+Loading driver FE5CEA76-4F72-49E8-986F-2CD899DFFE5D
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C94E540
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C94DF98
+ProtectUefiImageCommon - 0x7C94E540
+  - 0x000000007C924000 - 0x0000000000005940
+PROGRESS CODE: V03040002 I0
+Ftw: FtwWorkSpaceLba - 0x1, WorkBlockSize  - 0x10000, FtwWorkSpaceBase - 0x0
+Ftw: FtwSpareLba     - 0x2, SpareBlockSize - 0x10000
+Ftw: NumberOfWorkBlock - 0x1, FtwWorkBlockLba - 0x1
+Ftw: WorkSpaceLbaInSpare - 0x0, WorkSpaceBaseInSpare - 0x0
+Ftw: Remaining work space size - FFE0
+InstallProtocolInterface: 3EBD9E82-2C78-4DE6-9786-8D4BFCB7C881 7C913028
+PROGRESS CODE: V03040003 I0
+Loading driver CBD2E4D5-7068-4FF5-B462-9822B4AD8D60
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C94D7C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C94D718
+ProtectUefiImageCommon - 0x7C94D7C0
+  - 0x000000007CCDC000 - 0x0000000000011000
+PROGRESS CODE: V03040002 I0
+VarCheckLibRegisterSetVariableCheckHandler - 0x7CCE23E7 Success
+Variable driver common space: 0xFF9C 0xFF9C 0xFF9C
+Variable driver will work with auth variable format!
+InstallProtocolInterface: CD3D0A05-9E24-437C-A891-1EE053DB7638 7CCEB810
+InstallProtocolInterface: AF23B340-97B4-4685-8D4F-A3F28169B21D 7CCEB7E0
+InstallProtocolInterface: 1E5668E2-8481-11D4-BCF1-0080C73C8881 0
+NOTICE - AuthVariableLibInitialize() returns Unsupported!
+Variable driver will continue to work without auth variable support!
+RecordSecureBootPolicyVarData GetVariable SecureBoot Status E
+InstallProtocolInterface: 6441F818-6362-4E44-B570-7DBA31DD2453 0
+VarCheckLibRegisterSetVariableCheckHandler - 0x7CCE1FAD Success
+InstallProtocolInterface: 81D1675C-86F6-48DF-BD95-9A6E4F0925C3 7CCEB780
+PROGRESS CODE: V03040003 I0
+Loading driver F80697E9-7FD6-4665-8646-88E33EF71DFC
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C94C0C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C94CA18
+ProtectUefiImageCommon - 0x7C94C0C0
+  - 0x000000007C8FD000 - 0x000000000000AE80
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 94AB2F58-1438-4EF1-9152-18941A3A0E68 7C907798
+InstallProtocolInterface: A46423E3-4617-49F1-B9FF-D1BFA9115839 7C907790
+InstallProtocolInterface: 15853D7C-3DDF-43E0-A1CB-EBF85B8F872C 7C907770
+PROGRESS CODE: V03040003 I0
+Loading driver 1A1E4886-9517-440E-9FDE-3BE44CEE2136
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C945CC0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C945B18
+ProtectUefiImageCommon - 0x7C945CC0
+  - 0x000000007C8C5000 - 0x000000000001B6C0
+PROGRESS CODE: V03040002 I0
+Paging: added 512 pages to page table pool
+CurrentPagingContext:
+  MachineType   - 0x8664
+  PageTableBase - 0x5401000
+  Attributes    - 0xC0000002
+InstallProtocolInterface: 26BACCB1-6F42-11D4-BCE7-0080C73C8881 7C8D98A0
+MemoryProtectionCpuArchProtocolNotify:
+ProtectUefiImageCommon - 0x57F62A8
+  - 0x00000000057CF000 - 0x0000000000031000
+ProtectUefiImageCommon - 0x7C97F240
+  - 0x000000007C938000 - 0x000000000000CA40
+ProtectUefiImageCommon - 0x7C9377C0
+  - 0x000000007C930000 - 0x0000000000006780
+ProtectUefiImageCommon - 0x7C950BC0
+  - 0x000000007CD01000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000007CD01000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CD02000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CD05000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x7C94FC40
+  - 0x000000007CCFB000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000007CCFB000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCFC000 - 0x0000000000004000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CD00000 - 0x0000000000001000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x7C94F440
+  - 0x000000007C949000 - 0x0000000000002100
+ProtectUefiImageCommon - 0x7C9480C0
+  - 0x000000007CCF5000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000007CCF5000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCF6000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCF9000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x7C94E040
+  - 0x000000007CCED000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000007CCED000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCEE000 - 0x0000000000005000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCF3000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x7C94E540
+  - 0x000000007C924000 - 0x0000000000005940
+ProtectUefiImageCommon - 0x7C94D7C0
+  - 0x000000007CCDC000 - 0x0000000000011000
+SetUefiImageMemoryAttributes - 0x000000007CCDC000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCDD000 - 0x000000000000E000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCEB000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x7C94C0C0
+  - 0x000000007C8FD000 - 0x000000000000AE80
+ProtectUefiImageCommon - 0x7C945CC0
+  - 0x000000007C8C5000 - 0x000000000001B6C0
+ConvertPages: failed to find range 0 - FFF
+ConvertPages: failed to find range A0000 - FFFFF
+ConvertPages: failed to find range 7CE2D000 - 7CE60FFF
+ConvertPages: failed to find range 7CE61000 - 7CE70FFF
+ConvertPages: failed to find range 7CE71000 - 7F9FFFFF
+ConvertPages: failed to find range F0000000 - F3FFFFFF
+ConvertPages: failed to find range FEC00000 - FEC00FFF
+ConvertPages: failed to find range FEC80000 - FECFFFFF
+Failed to update capability: [13] 00000000FED00000 - 00000000FED003FF (C000000000000001 -> C000000000026001)
+ConvertPages: failed to find range FFD10000 - FFD4FFFF
+AP Loop Mode is 1
+AP Vector: non-16-bit = 7C92B000/44A
+WakeupBufferStart = 87000, WakeupBufferSize = DD
+AP Vector: 16-bit = 87000/39, ExchangeInfo = 87039/A4
+CpuDxe: 5-Level Paging = 0
+APIC MODE is 1
+MpInitLib: Find 2 processors in system.
+GetMicrocodePatchInfoFromHob: Microcode patch cache HOB is not found.
+CpuDxe: 5-Level Paging = 0
+AP Page Table Buffer Size = 4000
+Detect CPU count: 2
+Does not find any HOB stored CPU BIST information!
+InstallProtocolInterface: 3FDDA605-A76E-4F46-AD29-12F4531B3D08 7C8D9840
+PROGRESS CODE: V03040003 I0
+Loading driver C8339973-A563-4561-B858-D8476F9DEFC4
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C92D340
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C945998
+ProtectUefiImageCommon - 0x7C92D340
+  - 0x000000007C90F000 - 0x0000000000001C00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 26BACCB2-6F42-11D4-BCE7-0080C73C8881 7C910A70
+PROGRESS CODE: V03040003 I0
+Loading driver 42857F0A-13F2-4B21-8A23-53D3F714B840
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C92C340
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C92AE18
+ProtectUefiImageCommon - 0x7C92C340
+  - 0x000000007CCD8000 - 0x0000000000004000
+SetUefiImageMemoryAttributes - 0x000000007CCD8000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCD9000 - 0x0000000000002000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCDB000 - 0x0000000000001000 (0x0000000000004000)
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 5053697E-2CBC-4819-90D9-0580DEEE5754 0
+PROGRESS CODE: V03040003 I0
+Loading driver AD608272-D07F-4964-801E-7BD3B7888652
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C92A240
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C92A518
+ProtectUefiImageCommon - 0x7C92A240
+  - 0x000000007CCD4000 - 0x0000000000004000
+SetUefiImageMemoryAttributes - 0x000000007CCD4000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCD5000 - 0x0000000000002000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCD7000 - 0x0000000000001000 (0x0000000000004000)
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 1DA97072-BDDC-4B30-99F1-72A0B56FFF2A 0
+PROGRESS CODE: V03040003 I0
+Loading driver 4B28E4C7-FF36-4E10-93CF-A82159E777C5
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C9121C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C912A18
+ProtectUefiImageCommon - 0x7C9121C0
+  - 0x000000007CCCE000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000007CCCE000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCCF000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCD2000 - 0x0000000000002000 (0x0000000000004000)
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 27CFAC88-46CC-11D4-9A38-0090273FC14D 0
+InstallProtocolInterface: 9DA34AE0-EAF9-4BBF-8EC3-FD60226C44BE 7CCD2128
+InstallProtocolInterface: 695D7835-8D47-4C11-AB22-FA8ACCE7AE7A 7CCD2168
+InstallProtocolInterface: 2DF6BA0B-7092-440D-BD04-FB091EC3F3C1 7CCD20E8
+PROGRESS CODE: V03040003 I0
+Loading driver 378D7B65-8DA9-4773-B6E4-A47826A833E1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C9110C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C911C98
+ProtectUefiImageCommon - 0x7C9110C0
+  - 0x000000007CCC8000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000007CCC8000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000007CCC9000 - 0x0000000000004000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000007CCCD000 - 0x0000000000001000 (0x0000000000004000)
+PROGRESS CODE: V03040002 I0
+ERROR: C40000002:V0306000A I0 378D7B65-8DA9-4773-B6E4-A47826A833E1
+InstallProtocolInterface: 27CFAC87-46CC-11D4-9A38-0090273FC14D 0
+PROGRESS CODE: V03040003 I0
+Loading driver A19B1FE7-C1BC-49F8-875F-54A5D542443F
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C90EBC0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C90EF18
+ProtectUefiImageCommon - 0x7C90EBC0
+  - 0x000000007C908000 - 0x0000000000002200
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: AD61F191-AE5F-4C0E-B9FA-E869D288C64F 7C90A060
+PROGRESS CODE: V03040003 I0
+Loading driver 96B5C032-DF4C-4B6E-8232-438DCF448D0E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C90E240
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C90E518
+ProtectUefiImageCommon - 0x7C90E240
+  - 0x000000007C8FB000 - 0x0000000000001FC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 309DE7F1-7F5E-4ACE-B49C-531BE5AA95EF 7C8FCDC0
+PROGRESS CODE: V03040003 I0
+Loading driver 348C4D62-BFBD-4882-9ECE-C80BB1C4783B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C90DCC0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C90DB18
+ProtectUefiImageCommon - 0x7C90DCC0
+  - 0x000000007C883000 - 0x0000000000020D40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: E9CA4775-8657-47FC-97E7-7ED65A084324 7C8A3868
+InstallProtocolInterface: 0FD96974-23AA-4CDC-B9CB-98D17750322A 7C8A38E0
+InstallProtocolInterface: EF9FC172-A1B2-4693-B327-6D32FC416042 7C8A3908
+InstallProtocolInterface: 587E72D7-CC50-4F79-8209-CA291FC1A10F 7C8A3960
+InstallProtocolInterface: 0A8BADD5-03B8-4D19-B128-7B8F0EDAA596 7C8A3990
+InstallProtocolInterface: 31A6406A-6BDF-4E46-B2A2-EBAA89C40920 7C8A3888
+InstallProtocolInterface: 1A1241E6-8F19-41A9-BC0E-E8EF39E06546 7C8A38B0
+PROGRESS CODE: V03040003 I0
+Loading driver 13AC6DD0-73D0-11D4-B06B-00AA00BD6DE7
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C90CBC0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C90C098
+ProtectUefiImageCommon - 0x7C90CBC0
+  - 0x000000007C8ED000 - 0x0000000000006340
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 13AC6DD1-73D0-11D4-B06B-00AA00BD6DE7 7C90C998
+InstallProtocolInterface: 96F46153-97A7-4793-ACC1-FA19BF78EA97 7C8F2D00
+InstallProtocolInterface: 2755590C-6F3C-42FA-9EA4-A3BA543CDA25 7C90C198
+PROGRESS CODE: V03040003 I0
+Loading driver F9D88642-0737-49BC-81B5-6889CD57D9EA
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C90B040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C90C398
+ProtectUefiImageCommon - 0x7C90B040
+  - 0x000000007C8E8000 - 0x0000000000004240
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 03583FF6-CB36-4940-947E-B9B39F4AFAF7 7C8EC090
+SmbiosAdd: Smbios type 0 with size 0x4D is added to 32-bit table
+SmbiosAdd: Smbios type 0 with size 0x4D is added to 64-bit table
+SmbiosCreateTable: Initialize 32-bit entry point structure
+SmbiosCreateTable() re-allocate SMBIOS 32-bit table
+SmbiosCreateTable: Initialize 64-bit entry point structure
+SmbiosCreate64BitTable() re-allocate SMBIOS 64-bit table
+SmbiosAdd: Smbios type 1 with size 0x37 is added to 32-bit table
+SmbiosAdd: Smbios type 1 with size 0x37 is added to 64-bit table
+SmbiosAdd: Smbios type 2 with size 0x2A is added to 32-bit table
+SmbiosAdd: Smbios type 2 with size 0x2A is added to 64-bit table
+SmbiosAdd: Smbios type 3 with size 0x1D is added to 32-bit table
+SmbiosAdd: Smbios type 3 with size 0x1D is added to 64-bit table
+SmbiosAdd: Smbios type 4 with size 0x73 is added to 32-bit table
+SmbiosAdd: Smbios type 4 with size 0x73 is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 64-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 32-bit table
+SmbiosAdd: Smbios type 7 with size 0x23 is added to 64-bit table
+SmbiosAdd: Smbios type 16 with size 0x19 is added to 32-bit table
+SmbiosAdd: Smbios type 16 with size 0x19 is added to 64-bit table
+SmbiosAdd: Smbios type 17 with size 0x84 is added to 32-bit table
+SmbiosAdd: Smbios type 17 with size 0x84 is added to 64-bit table
+SmbiosAdd: Smbios type 19 with size 0x21 is added to 32-bit table
+SmbiosAdd: Smbios type 19 with size 0x21 is added to 64-bit table
+SmbiosAdd: Smbios type 20 with size 0x25 is added to 32-bit table
+SmbiosAdd: Smbios type 20 with size 0x25 is added to 64-bit table
+SmbiosAdd: Smbios type 32 with size 0xD is added to 32-bit table
+SmbiosAdd: Smbios type 32 with size 0xD is added to 64-bit table
+SmbiosAdd: Smbios type 41 with size 0x20 is added to 32-bit table
+SmbiosAdd: Smbios type 41 with size 0x20 is added to 64-bit table
+PROGRESS CODE: V03040003 I0
+Loading driver 9A5163E7-5C29-453F-825C-837A46A81E15
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8FA3C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F6F98
+ProtectUefiImageCommon - 0x7C8FA3C0
+  - 0x000000007C8E5000 - 0x0000000000002140
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: BB25CF6F-F1D4-11D2-9A0C-0090273FC1FD 7C8E6EC0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7C8E6FA0
+PROGRESS CODE: V03040003 I0
+Loading driver A5683620-7998-4BB2-A377-1C1E31E1E215
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F67C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F6618
+ProtectUefiImageCommon - 0x7C8F67C0
+  - 0x000000007C8B9000 - 0x0000000000005C00
+PROGRESS CODE: V03040002 I0
+No TPM12 instance required!
+PROGRESS CODE: V03040003 I0
+Loading driver 9622E42C-8E38-4A08-9E8F-54F784652F6B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F67C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F6698
+ProtectUefiImageCommon - 0x7C8F67C0
+  - 0x000000007C8B5000 - 0x0000000000007C40
+PROGRESS CODE: V03040002 I0
+PcRtc: Write 0x19 to CMOS location 0x32
+InstallProtocolInterface: FFE06BDD-6107-46A6-7BB2-5A9C7EC5275C 7C8F90A0
+InstallProtocolInterface: EB97088E-CFDF-49C6-BE4B-D906A5B20E86 7C8F90B0
+PROGRESS CODE: V03040003 I0
+Loading driver 6CE6B0DE-781C-4F6C-B42D-98346C614BEC
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F9240
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F9998
+ProtectUefiImageCommon - 0x7C8F9240
+  - 0x000000007C8C1000 - 0x00000000000039C0
+PROGRESS CODE: V03040002 I0
+Init HPET Timer Driver
+Choose 64-bit HPET timer.
+InstallProtocolInterface: 26BACCB3-6F42-11D4-BCE7-0080C73C8881 7C8C47C0
+PROGRESS CODE: V03040003 I0
+Loading driver EBF342FE-B1D3-4EF8-957C-8048606FF671
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F8040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F8D18
+ProtectUefiImageCommon - 0x7C8F8040
+  - 0x000000007C84B000 - 0x000000000001B6C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: B9D4C360-BCFB-4F9B-9298-53C136982258 7C866130
+InstallProtocolInterface: A770C357-B693-4E6D-A6CF-D21C728E550B 7C866160
+InstallProtocolInterface: 1F73B18D-4630-43C1-A1DE-6F80855D7DA4 7C866140
+PROGRESS CODE: V03040003 I0
+Loading driver F74D20EE-37E7-48FC-97F7-9B1047749C69
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F85C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F7F98
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 7A1949F0
+ProtectUefiImageCommon - 0x7C8F85C0
+  - 0x000000007A193000 - 0x0000000000026480
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 53CD299F-2BC1-40C0-8C07-23F64FDB30E0 7A194820
+PROGRESS CODE: V03040003 I0
+Loading driver 128FB770-5E79-4176-9E51-9BB268A17DD1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F71C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F7498
+ProtectUefiImageCommon - 0x7C8F71C0
+  - 0x000000007C874000 - 0x000000000000E700
+PROGRESS CODE: V03040002 I0
+InitRootBridge: populated root bus 0, with room for 3 subordinate bus(es)
+RootBridge: PciRoot(0x0)
+  Support/Attr: 7001F / 7001F
+    DmaAbove4G: No
+NoExtConfSpace: No
+     AllocAttr: 0 ()
+           Bus: 0 - 3 Translation=0
+            Io: 400 - 3057 Translation=0
+           Mem: 7FA00000 - 8B0FFFFF Translation=0
+    MemAbove4G: FFFFFFFFFFFFFFFF - 0 Translation=0
+          PMem: FFFFFFFFFFFFFFFF - 0 Translation=0
+   PMemAbove4G: FFFFFFFFFFFFFFFF - 0 Translation=0
+PciHostBridge driver failed to set EFI_MEMORY_UC to MMIO aperture - Unsupported.
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7C8F7698
+InstallProtocolInterface: 2F707EBB-4A1A-11D4-9A38-0090273FC14D 7C8F5370
+PROGRESS CODE: V03040003 I0
+Loading driver 1FA4DAFE-FA5D-4D75-BEA6-5863862C520A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F4040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F5918
+ProtectUefiImageCommon - 0x7C8F4040
+  - 0x000000007C8A5000 - 0x00000000000077C0
+PROGRESS CODE: V03040002 I0
+No TPM12 instance required!
+PROGRESS CODE: V03040003 I0
+Loading driver FDFF263D-5F68-4591-87BA-B768F445A9AF
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F4040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F4D18
+ProtectUefiImageCommon - 0x7C8F4040
+  - 0x000000007C800000 - 0x0000000000012040
+PROGRESS CODE: V03040002 I0
+WARNING: Tpm2RegisterTpm2DeviceLib - does not support 286BF25A-C2C3-408C-B3B4-25E6758B7317 registration
+No TPM2 instance required!
+PROGRESS CODE: V03040003 I0
+Loading driver CB933912-DF8F-4305-B1F9-7B44FA11395C
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F4040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F5898
+ProtectUefiImageCommon - 0x7C8F4040
+  - 0x000000007C8BF000 - 0x0000000000001BC0
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+Loading driver 6D33944A-EC75-4855-A54D-809C75241F6C
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8F4040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8F4D98
+ProtectUefiImageCommon - 0x7C8F4040
+  - 0x000000007A173000 - 0x000000000001FEC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 665E3FF6-46CC-11D4-9A38-0090273FC14D 7A192BD0
+PROGRESS CODE: V03040003 I0
+Loading driver A487A478-51EF-48AA-8794-7BEE2A0562F1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8E4040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8E4F18
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 7C8715F0
+ProtectUefiImageCommon - 0x7C8E4040
+  - 0x000000007C867000 - 0x000000000000C140
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 3C7200E9-005F-4EA4-87DE-A3DFAC8A27C3 7C8712B0
+PROGRESS CODE: V03040003 I0
+Loading driver F099D67F-71AE-4C36-B2A3-DCEB0EB2B7D8
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8E43C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8E4718
+ProtectUefiImageCommon - 0x7C8E43C0
+  - 0x000000007C8B3000 - 0x0000000000001CC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 665E3FF5-46CC-11D4-9A38-0090273FC14D 7C8B4AD0
+PROGRESS CODE: V03040003 I0
+Loading driver E660EA85-058E-4B55-A54B-F02F83A24707
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8E10C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8E1A98
+ProtectUefiImageCommon - 0x7C8E10C0
+  - 0x000000007A15D000 - 0x0000000000015EC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 9BBE29E9-FDA1-41EC-AD52-452213742D2E 7A1712F0
+InstallProtocolInterface: 4311EDC0-6054-46D4-9E40-893EA952FCCC 7A171308
+PROGRESS CODE: V03040003 I0
+Loading driver 93B80004-9FB3-11D4-9A3A-0090273FC14D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8AE040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8B1418
+ProtectUefiImageCommon - 0x7C8AE040
+  - 0x000000007A148000 - 0x0000000000014E80
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A15C500
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A15C3E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A15CA10
+InstallProtocolInterface: 19CB87AB-2CB9-4665-8360-DDCF6054F79D 7A15C9F0
+PROGRESS CODE: V03040003 I0
+Loading driver 08464531-4C99-4C4C-A887-8D8BA4BBB063
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8AE340
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8AEB18
+ProtectUefiImageCommon - 0x7C8AE340
+  - 0x000000007C8A6000 - 0x0000000000003D00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C8A9B00
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C8A9B60
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C8A9AA0
+PROGRESS CODE: V03040003 I0
+Loading driver 51CCF399-4FDF-4E55-A45B-E123F84D456A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8AD040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8ADF18
+ProtectUefiImageCommon - 0x7C8AD040
+  - 0x000000007C81C000 - 0x0000000000004340
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C820060
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C820180
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C820030
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C820000
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C820180
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C820030
+PROGRESS CODE: V03040003 I0
+Loading driver 408EDCEC-CF6D-477C-A5A8-B4844E3DE281
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8AD4C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8AD798
+ProtectUefiImageCommon - 0x7C8AD4C0
+  - 0x000000007C80A000 - 0x0000000000008180
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C811E80
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C811F60
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C811780
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C811E00
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C811F40
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C811760
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C811D80
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C811F20
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C811740
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C811D00
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C811F00
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C811720
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C811C80
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C811EE0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C811700
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 7C811AB0
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 7C811AE0
+InstallProtocolInterface: 31878C87-0B75-11D5-9A4F-0090273FC14D 7C811B50
+InstallProtocolInterface: 8D59D32B-C655-4AE9-9B15-F25904992A43 7C811BA8
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 7C811970
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 7C811850
+PROGRESS CODE: V03040003 I0
+Loading driver CCCB0C28-4B24-11D5-9A5A-0090273FC14D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8A50C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8A5998
+ProtectUefiImageCommon - 0x7C8A50C0
+  - 0x000000007C803000 - 0x00000000000060C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C807700
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C808EC0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C8076D0
+PROGRESS CODE: V03040003 I0
+Loading driver 0B04B2ED-861C-42CD-A22F-C3AAFACCB896
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8A4B40
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8A5318
+ProtectUefiImageCommon - 0x7C8A4B40
+  - 0x000000007C815000 - 0x0000000000004840
+PROGRESS CODE: V03040002 I0
+PROGRESS CODE: V03040003 I0
+Loading driver 6B38F7B4-AD98-40E9-9093-ACA2B5A253C4
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8A4B40
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8A4E98
+ProtectUefiImageCommon - 0x7C8A4B40
+  - 0x000000007C815000 - 0x00000000000048C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7C819600
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7C819740
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7C8195D0
+PROGRESS CODE: V03040003 I0
+Loading driver 1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8A4540
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C8A4498
+ProtectUefiImageCommon - 0x7C8A4540
+  - 0x000000007A13A000 - 0x0000000000006E00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A140B40
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A140C60
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A140B10
+PROGRESS CODE: V03040003 I0
+Loading driver CD3BAFB6-50FB-4FE8-8E4E-AB74D2C1A600
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C825CC0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C825118
+ProtectUefiImageCommon - 0x7C825CC0
+  - 0x000000007C800000 - 0x0000000000002140
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 1D85CD7F-F43D-11D2-9A0C-0090273FC14D 7C801C40
+InstallProtocolInterface: A4C751FC-23AE-4C3E-92E9-4964CF63F349 7C801BE0
+PROGRESS CODE: V03040003 I0
+Loading driver 820C59BB-274C-43B2-83EA-DAC673035A59
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C825440
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C825398
+ProtectUefiImageCommon - 0x7C825440
+  - 0x000000007A144000 - 0x0000000000003180
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A146FA0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A147000
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A146F10
+PROGRESS CODE: V03040003 I0
+Loading driver 19DF145A-B1D4-453F-8507-38816676D7F6
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8240C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C824A98
+ProtectUefiImageCommon - 0x7C8240C0
+  - 0x000000007A12C000 - 0x0000000000006880
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A132400
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A132500
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A1324E0
+PROGRESS CODE: V03040003 I0
+Loading driver 5E523CB4-D397-4986-87BD-A6DD8B22F455
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8244C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C823018
+ProtectUefiImageCommon - 0x7C8244C0
+  - 0x000000007A114000 - 0x000000000000B800
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A11F380
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A11F3E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A11F310
+PROGRESS CODE: V03040003 I0
+Loading driver 0167CCC4-D0F7-4F21-A3EF-9E64B7CDCE8B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C823140
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C823B18
+ProtectUefiImageCommon - 0x7C823140
+  - 0x000000007A127000 - 0x0000000000004180
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A12AF20
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A12AFE0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A12AF00
+PROGRESS CODE: V03040003 I0
+Loading driver 0A66E322-3740-4CCE-AD62-BD172CECCA35
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C823540
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C822F98
+ProtectUefiImageCommon - 0x7C823540
+  - 0x000000007A0FC000 - 0x000000000000B680
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A1074A0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A107500
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A107400
+PROGRESS CODE: V03040003 I0
+Loading driver 5BE3BDF4-53CF-46A3-A6A9-73C34A6E5EE3
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C822140
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C822398
+ProtectUefiImageCommon - 0x7C822140
+  - 0x000000007A0E2000 - 0x000000000000C1C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0EDFC0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0EE020
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0EDEF0
+InstallProtocolInterface: 5C198761-16A8-4E69-972C-89D67954F81D 7A0EDE40
+PROGRESS CODE: V03040003 I0
+Loading driver 961578FE-B6B7-44C3-AF35-6BC705CD2B1F
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C821040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C821D18
+ProtectUefiImageCommon - 0x7C821040
+  - 0x000000007A0F1000 - 0x000000000000AA00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0FB800
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0FB860
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0FB620
+PROGRESS CODE: V03040003 I0
+Loading driver CB683001-379F-48C7-B7B6-707D29454BF5
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C821440
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C821C18
+ProtectUefiImageCommon - 0x7C821440
+  - 0x000000007A0D8000 - 0x0000000000009EC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: EF1F5EF1-F17E-5857-6578-666174657866 7A0E06E8
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0DEC80
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0DECB0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0DECC8
+PROGRESS CODE: V03040003 I0
+Loading driver 8EC49C43-D1C4-4E6C-98BF-232CA5D89A1B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8140C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C814A98
+ProtectUefiImageCommon - 0x7C8140C0
+  - 0x000000007A121000 - 0x00000000000050C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A125CA0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A125C50
+PROGRESS CODE: V03040003 I0
+Loading driver 2282EFD0-678B-4753-8D06-200D5940285D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C8143C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C814718
+ProtectUefiImageCommon - 0x7C8143C0
+  - 0x000000007A0CC000 - 0x000000000000B840
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: EF1F5EF1-F17E-5857-6E74-66736E746673 7A0D5FA8
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0D43A0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0D43D0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0D43E8
+PROGRESS CODE: V03040003 I0
+Loading driver 9D380387-A15A-4053-AE19-FF3495B6D0D5
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C813940
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7C813218
+ProtectUefiImageCommon - 0x7C813940
+  - 0x000000007A10E000 - 0x00000000000052C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A112E60
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A112E10
+PROGRESS CODE: V03040003 I0
+Loading driver 8E325979-3FE1-4927-AAE2-8F5C4BD2AF0D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7C813440
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A143F98
+ProtectUefiImageCommon - 0x7C813440
+  - 0x000000007A0B2000 - 0x000000000000C700
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0BE260
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0BE2C0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0BE210
+PROGRESS CODE: V03040003 I0
+Loading driver 2145F72F-E6F1-4440-A828-59DC9AAB5F89
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A143140
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A143398
+ProtectUefiImageCommon - 0x7A143140
+  - 0x000000007A0A9000 - 0x0000000000008AC0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0B1900
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0B1960
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0B1880
+PROGRESS CODE: V03040003 I0
+Loading driver 430AC2F7-EEC6-4093-94F7-9F825A7C1C40
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A143540
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A141B18
+ProtectUefiImageCommon - 0x7A143540
+  - 0x000000007A0C5000 - 0x0000000000006200
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0CAFE0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0CB040
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0CADD0
+PROGRESS CODE: V03040003 I0
+Loading driver 2FB92EFA-2EE0-4BAE-9EB6-7464125E1EF7
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A1417C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A141D18
+ProtectUefiImageCommon - 0x7A1417C0
+  - 0x000000007A099000 - 0x00000000000078C0
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A0A0660
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A0A06E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A0A06C0
+PROGRESS CODE: V03040003 I0
+Loading driver BDFE430E-8F2A-4DB0-9991-6F856594777E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A139040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A139D18
+ProtectUefiImageCommon - 0x7A139040
+  - 0x000000007A085000 - 0x0000000000009240
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A08E080
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A08E0E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A08E010
+PROGRESS CODE: V03040003 I0
+Loading driver B7F50E91-A759-412C-ADE4-DCD03E7F7C28
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A1399C0
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A139398
+ProtectUefiImageCommon - 0x7A1399C0
+  - 0x000000007A067000 - 0x000000000000E140
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A074EA0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A074FA0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A074F80
+PROGRESS CODE: V03040003 I0
+Loading driver 240612B7-A063-11D4-9A3A-0090273FC14D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A138040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A138E98
+ProtectUefiImageCommon - 0x7A138040
+  - 0x000000007A07B000 - 0x0000000000009F40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A084C80
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A084BE0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A084B80
+PROGRESS CODE: V03040003 I0
+Loading driver 2D2E62CF-9ECF-43B7-8219-94E7FC713DFE
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A138440
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A138A18
+ProtectUefiImageCommon - 0x7A138440
+  - 0x000000007A092000 - 0x0000000000006A40
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A098080
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A098860
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A098840
+PROGRESS CODE: V03040003 I0
+Loading driver 9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A137B40
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A137098
+ProtectUefiImageCommon - 0x7A137B40
+  - 0x000000007A060000 - 0x0000000000006100
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A065EA0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A065F80
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A065E80
+PROGRESS CODE: V03040003 I0
+Loading driver 2D2E62AA-9ECF-43B7-8219-94E7FC713DFE
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A137240
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A137818
+ProtectUefiImageCommon - 0x7A137240
+  - 0x000000007A10A000 - 0x0000000000003E00
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 7A10DC00
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 7A10DC60
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 7A10DBA0
+PROGRESS CODE: V03040003 I0
+Loading driver B8E62775-BB0A-43F0-A843-5BE8B14F8CCD
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 7A136B40
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 7A136A98
+ProtectUefiImageCommon - 0x7A136B40
+  - 0x000000007A0C2000 - 0x0000000000002680
+PROGRESS CODE: V03040002 I0
+InstallProtocolInterface: CDEA2BD3-FC25-4C1C-B97C-B31186064990 7A0C43C0
+InstallProtocolInterface: 4B5DC1DF-1EAA-48B2-A7E9-EAC489A00B5C 7A0C4460
+PROGRESS CODE: V03040003 I0
+PROGRESS CODE: V03041001 I0
+[Bds] Entry...
+[BdsDxe] Locate Variable Policy protocol - Success
+Variable Driver Auto Update PlatformLang, PlatformLang:en, Lang:eng Status: Success
+PROGRESS CODE: V03051005 I0
+InstallReadyToLock  entering......
+[Variable]END_OF_DXE is signaled
+Initialize variable error flag (FF)
+All EndOfDxe callbacks have returned successfully
+InstallReadyToLock  end
+PROGRESS CODE: V02010000 I0
+PciBus: Discovered PCI @ [00|00|00]  [VID = 0x8086, DID = 0x150]
+PciBus: Discovered PPB @ [00|01|00]  [VID = 0x8086, DID = 0x151]
+PciBus: Discovered PCI @ [01|00|00]  [VID = 0x10DE, DID = 0x104A]
+PciBus: Discovered PCI @ [01|00|01]  [VID = 0x10DE, DID = 0xE08]
+PciBus: Discovered PCI @ [00|19|00]  [VID = 0x8086, DID = 0x1503]
+PciBus: Discovered PCI @ [00|1A|00]  [VID = 0x8086, DID = 0x1C2D]
+PciBus: Discovered PCI @ [00|1B|00]  [VID = 0x8086, DID = 0x1C20]
+PciBus: Discovered PPB @ [00|1C|00]  [VID = 0x8086, DID = 0x1C18]
+PciBus: Discovered PCI @ [02|00|00]  [VID = 0x1106, DID = 0x3403]
+PciBus: Discovered PCI @ [00|1D|00]  [VID = 0x8086, DID = 0x1C26]
+PciBus: Discovered PPB @ [00|1E|00]  [VID = 0x8086, DID = 0x244E]
+PciBus: Discovered PCI @ [00|1F|00]  [VID = 0x8086, DID = 0x1C4A]
+PciBus: Discovered PCI @ [00|1F|02]  [VID = 0x8086, DID = 0x1C02]
+PciBus: Discovered PCI @ [00|1F|03]  [VID = 0x8086, DID = 0x1C22]
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135818
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A134028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135A18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A134428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135A98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A134828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135018
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A133028
+PROGRESS CODE: V02010004 I0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135098
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A133428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7C94CC98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A133828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7C94CD18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A120028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135118
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A120428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A135198
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A120828
+PROGRESS CODE: V02010004 I0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A109E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A109028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A109F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A109428
+PROGRESS CODE: V02010004 I0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A109F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A109828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A108E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A108028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A108F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 7A108428
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+Found PCI Display device
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+Found LPC Bridge device
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+[Bds]RegisterKeyNotify: 0017/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0002/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0000/000D 80000000/00 Success
+PROGRESS CODE: V02010000 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+EhcCreateUsb2Hc: capability length 32
+InstallProtocolInterface: 3E745226-9818-45B6-A2AC-D7CD0E8BA2BC 7A0C1120
+EhcDriverBindingStart: EHCI started for controller @ 7A133D18
+PROGRESS CODE: V02020000 I0
+PROGRESS CODE: V02020004 I0
+InstallProtocolInterface: 240612B7-A063-11D4-9A3A-0090273FC14D 7A0BF0A0
+PROGRESS CODE: V02020003 I0
+EhcGetCapability: 3 ports, 64 bit 1
+UsbRootHubInit: root hub 7A0A5C18 - max speed 2, 3 ports
+UsbBusStart: usb bus started on 7A133D18, root hub 7A0A5C18
+EhcCreateUsb2Hc: capability length 32
+InstallProtocolInterface: 3E745226-9818-45B6-A2AC-D7CD0E8BA2BC 7A0A51A0
+EhcDriverBindingStart: EHCI started for controller @ 7A108A98
+PROGRESS CODE: V02020000 I0
+PROGRESS CODE: V02020004 I0
+InstallProtocolInterface: 240612B7-A063-11D4-9A3A-0090273FC14D 7A091020
+PROGRESS CODE: V02020003 I0
+EhcGetCapability: 3 ports, 64 bit 1
+UsbRootHubInit: root hub 7A091C98 - max speed 2, 3 ports
+UsbBusStart: usb bus started on 7A108A98, root hub 7A091C98
+PROGRESS CODE: V02020000 I0
+PROGRESS CODE: V02020000 I0
+PROGRESS CODE: V02010000 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02010004 I0
+PROGRESS CODE: V02020000 I0
+PROGRESS CODE: V02020000 I0
+SataControllerStart start
+Original PCI Attributes = 0x4700
+Supported PCI Attributes = 0xE700
+PROGRESS CODE: V02010004 I0
+Enabled PCI Attributes = 0x700
+Ports Implemented(PI) = 0x3F
+HBA Capabilities(CAP) = 0xFF30FF05
+InstallProtocolInterface: A1E37052-80D9-4E65-A317-3E9A55C43EC9 7A08FA20
+SataControllerStart end with Success
+==AtaAtapiPassThru Start== Controller = 7A0F0818
+PROGRESS CODE: V02010004 I0
+UsbEnumeratePort: port 0 state - 101, change - 01 on 7A0A5C18
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 0)
+UsbEnumeratePort: new device connected at port 0
+EhcSetRootHubPortFeature: exit status Success
+EhcClearRootHubPortFeature: exit status Success
+UsbEnumerateNewDev: hub port 0 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 1
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 25
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+EhcExecTransfer: transfer failed with 2
+EhcControlTransfer: error - Device Error, transfer - 2
+UsbBuildDescTable: get language ID table - Unsupported
+UsbEnumerateNewDev: device 1 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 1
+UsbSelectSetting: setting 0 selected for interface 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A079B18
+InstallProtocolInterface: 2B2F68D6-0CD2-44CF-8E8B-BBA20B1B5B75 7A079A40
+UsbConnectDriver: found a hub device
+UsbHubInit: hub 1 has 6 ports
+UsbHubInit: hub 1 initialized
+PROGRESS CODE: V02020006 I0
+EhcClearRootHubPortFeature: exit status Success
+UsbEnumeratePort: port 0 state - 101, change - 01 on 7A091C98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 0)
+UsbEnumeratePort: new device connected at port 0
+EhcSetRootHubPortFeature: exit status Success
+EhcClearRootHubPortFeature: exit status Success
+UsbEnumerateNewDev: hub port 0 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 1
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 25
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+EhcExecTransfer: transfer failed with 2
+EhcControlTransfer: error - Device Error, transfer - 2
+UsbBuildDescTable: get language ID table - Unsupported
+UsbEnumerateNewDev: device 1 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 1
+UsbSelectSetting: setting 0 selected for interface 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 7A079918
+InstallProtocolInterface: 2B2F68D6-0CD2-44CF-8E8B-BBA20B1B5B75 7A0796C0
+UsbConnectDriver: found a hub device
+UsbHubInit: hub 1 has 8 ports
+UsbHubInit: hub 1 initialized
+PROGRESS CODE: V02020006 I0
+EhcClearRootHubPortFeature: exit status Success
+UsbEnumeratePort: port 5 state - 101, change - 01 on 7A079A18
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 5)
+UsbEnumeratePort: new device connected at port 5
+UsbEnumerateNewDev: hub port 5 is reset
+UsbEnumerateNewDev: device is of 1 speed
+UsbEnumerateNewDev: device uses translator (1, 6)
+UsbEnumerateNewDev: device is now ADDRESSED at 2
+UsbEnumerateNewDev: max packet size for EP 0 is 8
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 59
+UsbParseConfigDesc: config 1 has 2 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+UsbParseInterfaceDesc: interface 1(setting 0) has 1 endpoints
+EhcExecTransfer: transfer failed with 2
+EhcControlTransfer: error - Device Error, transfer - 2
+UsbBuildDescTable: get language ID table - Unsupported
+UsbEnumerateNewDev: device 2 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 2
+UsbSelectSetting: setting 0 selected for interface 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 79F3CF98
+InstallProtocolInterface: 2B2F68D6-0CD2-44CF-8E8B-BBA20B1B5B75 79F3D8C0
+UsbConnectDriver: TPL before connect is 8, 79F3D998
+PROGRESS CODE: V01010004 I0
+PROGRESS CODE: V01010003 I0
+PROGRESS CODE: V01010006 I0
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 79F3D238
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 79F3D250
+PROGRESS CODE: V01010001 I0
+PROGRESS CODE: V01011001 I0
+InstallProtocolInterface: D3B36F2B-D551-11D4-9A46-0090273FC14D 0
+UsbConnectDriver: TPL after connect is 8
+UsbSelectSetting: setting 0 selected for interface 1
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 79F37898
+InstallProtocolInterface: 2B2F68D6-0CD2-44CF-8E8B-BBA20B1B5B75 79F37940
+UsbConnectDriver: TPL before connect is 8, 79F37818
+UsbConnectDriver: TPL after connect is 8
+UsbSelectConfig: failed to connect driver - Not Found, ignored
+PROGRESS CODE: V02020006 I0
+IDENTIFY DEVICE: [0] = 0000000000000040, [2] = 000000000000C837, [83] = 0000000000007400, [86] = 000000000000B400
+port [0] port multitplier [0] has a [harddisk]
+PROGRESS CODE: V02081000 I0
+The S.M.A.R.T threshold exceeded condition is not detected
+PROGRESS CODE: V02081003 I0
+Enabled S.M.A.R.T feature at port [0] PortMultiplier [0]!
+CalculateBestPioMode: AdvancedPioMode = 3
+IdeInitCalculateMode: PioMode = 4
+CalculateBestUdmaMode: DeviceUDmaMode = 207F
+IdeInitCalculateMode: UdmaMode = 5
+PROGRESS CODE: V01070004 I0
+InstallProtocolInterface: 1D3DE7F0-0807-424F-AA69-11A54E19A46F 7A079040
+InstallProtocolInterface: 143B7632-B81B-4CB7-ABD3-B625A5B9BFFE 7A079090
+PROGRESS CODE: V02080000 I0
+InstallProtocolInterface: 19DF145A-B1D4-453F-8507-38816676D7F6 79F36B18
+PROGRESS CODE: V02080003 I0
+PROGRESS CODE: V02080004 I0
+AtaBus - Identify Device: Port 0 PortMultiplierPort FFFF
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 79F36C18
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 79F360A8
+InstallProtocolInterface: A77B2472-E282-4E9F-A245-C2C0E27BBCC1 79F360D8
+InstallProtocolInterface: D432A67F-14DC-484B-B3BB-3F0291849327 79F36130
+PROGRESS CODE: V02070000 I0
+InstallProtocolInterface: 0167CCC4-D0F7-4F21-A3EF-9E64B7CDCE8B 79F366A0
+PROGRESS CODE: V02070003 I0
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 7A08F3A0
+InstallProtocolInterface: 151C8EAE-7F2C-472C-9E54-9828194F6A88 7A08F3B8
+ BlockSize : 512 
+ LastBlock : DF94BAF 
+ Valid efi partition table header
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 800
+ End LBA : 1007FF
+ Partition size: 100000
+ Start : 100000 End : 200FFE00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 79F33518
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 79F2AA30
+InstallProtocolInterface: A77B2472-E282-4E9F-A245-C2C0E27BBCC1 79F2AA60
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 79F2AAE8
+InstallProtocolInterface: C12A7328-F81F-11D2-BA4B-00A0C93EC93B 0
+ Index : 1
+ Start LBA : 100800
+ End LBA : DDAC7FF
+ Partition size: DCAC000
+ Start : 20100000 End : 1BB58FFE00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 79F2A698
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 79F2A430
+InstallProtocolInterface: A77B2472-E282-4E9F-A245-C2C0E27BBCC1 79F2A460
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 79F2A4E8
+InstallProtocolInterface: 0FC63DAF-8483-4772-8E79-3D69D8477DE4 0
+ Index : 2
+ Start LBA : DDAC800
+ End LBA : DF947FF
+ Partition size: 1E8000
+ Start : 1BB5900000 End : 1BF28FFE00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 79F24A18
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 79F24BB0
+InstallProtocolInterface: A77B2472-E282-4E9F-A245-C2C0E27BBCC1 79F24BE0
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 79F24C68
+InstallProtocolInterface: 0657FD6D-A4AB-43C4-84E5-0933C84B4F4F 0
+Prepare to Free Pool
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 79F2AD20
+InstallProtocolInterface: 151C8EAE-7F2C-472C-9E54-9828194F6A88 79F2AD38
+ BlockSize : 512 
+ LastBlock : FFFFF 
+InstallProtocolInterface: 964E5B22-6459-11D2-8E39-00A0C969723B 79F28030
+Installed Fat filesystem on 79F2AF98
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 79F24620
+InstallProtocolInterface: 151C8EAE-7F2C-472C-9E54-9828194F6A88 79F24638
+InstallProtocolInterface: 964E5B22-6459-11D2-8E39-00A0C969723B 79F29420
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 79F29120
+InstallProtocolInterface: 151C8EAE-7F2C-472C-9E54-9828194F6A88 79F29138
+ BlockSize : 512 
+ LastBlock : 1E7FFF 
+PROGRESS CODE: V02020000 I0
+UsbBusRecursivelyConnectWantedUsbIo: TPL before connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL after connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL before connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL after connect is 4
+PROGRESS CODE: V02020000 I0
+UsbBusRecursivelyConnectWantedUsbIo: TPL before connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL after connect is 4
+PROGRESS CODE: V02080000 I0
+PROGRESS CODE: V02080003 I0
+PROGRESS CODE: V02070000 I0
+PROGRESS CODE: V02070003 I0
+SataControllerStart start
+SataControllerStart error return status = Already started
+ BlockSize : 512 
+ LastBlock : DF94BAF 
+ Valid efi partition table header
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 800
+ End LBA : 1007FF
+ Partition size: 100000
+ Start : 100000 End : 200FFE00
+ Index : 1
+ Start LBA : 100800
+ End LBA : DDAC7FF
+ Partition size: DCAC000
+ Start : 20100000 End : 1BB58FFE00
+ Index : 2
+ Start LBA : DDAC800
+ End LBA : DF947FF
+ Partition size: 1E8000
+ Start : 1BB5900000 End : 1BF28FFE00
+Prepare to Free Pool
+ BlockSize : 512 
+ LastBlock : 1E7FFF 
+PROGRESS CODE: V02020000 I0
+UsbBusRecursivelyConnectWantedUsbIo: TPL before connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL after connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL before connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL after connect is 4
+PROGRESS CODE: V02020000 I0
+UsbBusRecursivelyConnectWantedUsbIo: TPL before connect is 4
+UsbBusRecursivelyConnectWantedUsbIo: TPL after connect is 4
+[TPM2PP] no PPI
+[Bds]BdsWait ...Zzzzzzzzzzzz...
+[Bds]BdsWait(2)..Zzzz...
+[Bds]BdsWait(1)..Zzzz...
+[Bds]Exit the waiting!
+PROGRESS CODE: V03051007 I0
+[Bds]Stop Hotkey Service!
+[Bds]UnregisterKeyNotify: 0017/0000 Success
+[Bds]UnregisterKeyNotify: 0002/0000 Success
+[Bds]UnregisterKeyNotify: 0000/000D Success
+PROGRESS CODE: V03051001 I0
+Memory  Previous  Current    Next   
+ Type    Pages     Pages     Pages  
+======  ========  ========  ========
+  09    00000019  0000000B  00000019
+  0A    00000004  00000000  00000004
+  00    00000008  00000006  00000008
+  06    00000100  0000004F  00000100
+  05    00000100  0000003F  00000100
+FSOpen: Open '\EFI\debian\grubx64.efi' Success
+[Bds] Expand PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0xFFFF,0x0)/HD(1,GPT,34E28B62-6642-45D3-B19C-44B419BBC7FB,0x800,0x100000)/\EFI\debian\grubx64.efi -> PciRoot(0x0)/Pci(0x1F,0x2)/Sata(0x0,0xFFFF,0x0)/HD(1,GPT,34E28B62-6642-45D3-B19C-44B419BBC7FB,0x800,0x100000)/\EFI\debian\grubx64.efi
+PROGRESS CODE: V03058000 I0
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 79A80040
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 79A80E98
+ProtectUefiImageCommon - 0x79A80040
+  - 0x0000000079158000 - 0x0000000000401000
+PROGRESS CODE: V03058001 I0
+CpuDxe: 5-Level Paging = 0
+MpInitChangeApLoopCallback() done!
+PROGRESS CODE: V03101019 I0

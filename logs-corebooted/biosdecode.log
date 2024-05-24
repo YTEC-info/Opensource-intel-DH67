@@ -1,0 +1,10 @@
+# biosdecode 3.4
+ACPI 2.0 present.
+	OEM Identifier: COREv4
+	RSD Table 32-bit Address: 0x7CE35030
+	XSD Table 64-bit Address: 0x000000007CE350E0
+SMBIOS 3.0 present.
+	Structure Table Length: 736 bytes
+	Structure Table Address: 0x7CE2D040
+	Number Of Structures: 16
+	Maximum Structure Size: 132 bytes

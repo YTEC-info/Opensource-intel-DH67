@@ -1,0 +1,43 @@
+0000-0cf7 : PCI Bus 0000:00
+  0000-001f : dma1
+  0020-0021 : pic1
+  0040-0043 : timer0
+  0050-0053 : timer1
+  0060-0060 : keyboard
+  0064-0064 : keyboard
+  0070-0077 : rtc0
+  0080-008f : dma page reg
+  00a0-00a1 : pic2
+  00c0-00df : dma2
+  00f0-00ff : fpu
+    00f0-00f0 : PNP0C04:00
+  0400-041f : 0000:00:1f.3
+    0400-041f : i801_smbus
+  0480-04bf : pnp 00:03
+  0500-057f : pnp 00:03
+    0500-0503 : ACPI PM1a_EVT_BLK
+    0504-0505 : ACPI PM1a_CNT_BLK
+    0508-050b : ACPI PM_TMR
+    0520-052f : ACPI GPE0_BLK
+    0530-0533 : iTCO_wdt.1.auto
+      0530-0533 : iTCO_wdt
+    0550-0550 : ACPI PM2_CNT_BLK
+    0560-057f : iTCO_wdt.1.auto
+      0560-057f : iTCO_wdt
+0cf8-0cff : PCI conf1
+0d00-ffff : PCI Bus 0000:00
+  1000-1fff : PCI Bus 0000:01
+    1000-107f : 0000:01:00.0
+  2000-2fff : PCI Bus 0000:02
+    2000-20ff : 0000:02:00.0
+  3000-301f : 0000:00:19.0
+  3020-303f : 0000:00:1f.2
+    3020-303f : ahci
+  3040-3047 : 0000:00:1f.2
+    3040-3047 : ahci
+  3048-304f : 0000:00:1f.2
+    3048-304f : ahci
+  3050-3053 : 0000:00:1f.2
+    3050-3053 : ahci
+  3054-3057 : 0000:00:1f.2
+    3054-3057 : ahci
