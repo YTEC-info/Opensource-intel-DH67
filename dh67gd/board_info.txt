@@ -1,5 +1,5 @@
 Category: desktop
-Board URL: https://www.intel.com.br/content/www/br/pt/products/sku/50095/intel-desktop-board-dh67gd/specifications.html
+Board URL: https://www.intel.com/content/www/us/en/products/sku/50095/intel-desktop-board-dh67gd/specifications.html
 ROM package: SOIC-8
 ROM protocol: SPI
 ROM socketed: n
